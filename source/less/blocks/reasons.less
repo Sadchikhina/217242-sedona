@@ -1,29 +1,32 @@
-.reasons__title,
-.reasons-list__title,
-.reasons-list__add-info-title {
-  font-size: @title-size;
-}
-
-.reasons__intro,
-.reasons-list__number,
-.reasons-list__description {
-  font-size: @regular-size;
+.reasons {
+  &__title {
+    font-size: @title-size;
+  }
+  &__intro {
+    font-size: @regular-size;
+  }
 }
 
 .reasons-list {
   list-style-type: none;
   padding-left: 0;
+  &__title,
+  &__add-info-title {
+    font-size: @title-size;
+  }
+  &__number,
+  &__description {
+    font-size: @regular-size;
+  }
 }
 
 .reasons-list__item {
   background-color: @light-grey;
-}
-
-.reasons-list__item--bg-blue {
-  background-color: @blue;
-  color: @white;
-}
-
-.reasons-list__item--add-info {
-  background-color: @white;
+  &--bg-blue {
+    background-color: @blue;
+    color: @white;
+  }
+  &--add-info {
+    background-color: @white;
+  }
 }
