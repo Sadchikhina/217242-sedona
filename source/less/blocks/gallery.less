@@ -1,4 +1,7 @@
 .gallery {
+  &__wrapper {
+    border-bottom: 1px solid @grey-border;
+  }
   &__title {
     font-size: @title-size;
   }
@@ -20,6 +23,16 @@
   &__author {
     font-size: 12px;
     text-transform: none;
+  }
+  &__item {
+    border-bottom: 1px solid @grey-border;
+    padding-top: 20px;
+  }
+  &__likes {
+    padding-left: 55px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: bold;
   }
 }
 
