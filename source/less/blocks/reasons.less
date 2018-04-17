@@ -1,9 +1,29 @@
-.reasons {
-  background-color: @white;
-  color: @black;
+.reasons__title,
+.reasons-list__title,
+.reasons-list__add-info-title {
+  font-size: @title-size;
+}
+
+.reasons__intro,
+.reasons-list__number,
+.reasons-list__description {
+  font-size: @regular-size;
+}
+
+.reasons-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.reasons-list__item {
+  background-color: @light-grey;
 }
 
 .reasons-list__item--bg-blue {
   background-color: @blue;
   color: @white;
+}
+
+.reasons-list__item--add-info {
+  background-color: @white;
 }
