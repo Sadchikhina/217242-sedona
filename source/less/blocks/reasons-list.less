@@ -1,0 +1,32 @@
+.reasons-list {
+  list-style-type: none;
+  padding-left: 0;
+  &__title {
+    font-size: 21px;
+    line-height: 10px;
+  }
+  &__number,
+  &__description {
+    font-size: @regular-size;
+    line-height: 21px;
+  }
+  &__add-info-title {
+    font-size: @title-size;
+  }
+  &__add-info-description {
+    font-size: @regular-size;
+    line-height: 21px;
+  }
+}
+
+.reasons-list__item {
+  background-color: @grey;
+  &--bg-blue {
+    background-color: @blue;
+    color: @white;
+  }
+  &--add-info {
+    background-color: @white;
+    padding-left: 70px;
+  }
+}
