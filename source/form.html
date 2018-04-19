@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
     <meta name="keywords" content="">
     <meta name="description" content="">
   </head>
@@ -12,21 +13,23 @@
       <nav class="main-nav">
         <button class="main-nav__button" type="button" name="open"></button>
         <ul class="main-nav__list cite-nav">
-          <li class="cite-nav__item cite-nav__item--active"><a>ГЛАВНАЯ</a></li>
+          <li class="cite-nav__item"><a href="index.html">ГЛАВНАЯ</a></li>
           <li class="cite-nav__item"><a href="gallery.html">ФОТО И ВИДЕО</a></li>
-          <li class="cite-nav__item"><a href="form.html">ФОРМА ОТЗЫВА</a></li>
+          <li class="cite-nav__item cite-nav__item--active"><a>ФОРМА ОТЗЫВА</a></li>
           <li class="cite-nav__item"><a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML ACADEMY</a></li>
         </ul>
         <button class="visually-hidden" type="button" name="close"></button>
       </nav>
     </header>
     <main class="page-main">
-      <header class="page-main__header form-main-header">
-        <img class="form-main-header__bg-img" src="#" width="" height="" alt="пейзаж седоны">
+      <header class="page-main__header">
+        <img class="form-main-header__img" src="img\text-sedona.svg" width="" height="">
       </header>
       <section class="form">
-        <h1 class="form__title">Оставьте свой отзыв</h1>
-        <p class="form__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <div class="form__wrapper">
+          <h1 class="form__title">Оставьте свой отзыв</h1>
+          <p class="form__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </div>
         <form class="feedback" action="https://echo.htmlacademy.ru" method="get">
           <div class="feedback__form introduce-form">
             <label class="introduce-form__label">Представьтесь:</label>
@@ -90,7 +93,7 @@
           </div>
           <div class="feedback__form comments-form">
             <label class="comments-form__input-label" for="comments">Опишите свои эмоции:</label>
-            <textarea class="comments-form__input" id="comments" name="commentsfield">Опишите подробно все свои восторги</textarea>
+            <textarea class="comments-form__field" id="comments" name="commentsfield">Опишите подробно все свои восторги</textarea>
           </div>
           <button class="feedback__button" type="submit" name="submit-button">Отправить отзыв</button>
         </form>

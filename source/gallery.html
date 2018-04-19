@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
     <meta name="keywords" content="">
     <meta name="description" content="">
   </head>
@@ -12,8 +13,8 @@
       <nav class="main-nav">
         <button class="main-nav__button" type="button" name="open"></button>
         <ul class="main-nav__list cite-nav">
-          <li class="cite-nav__item cite-nav__item--active"><a>ГЛАВНАЯ</a></li>
-          <li class="cite-nav__item"><a href="gallery.html">ФОТО И ВИДЕО</a></li>
+          <li class="cite-nav__item"><a href="index.html">ГЛАВНАЯ</a></li>
+          <li class="cite-nav__item cite-nav__item--active"><a>ФОТО И ВИДЕО</a></li>
           <li class="cite-nav__item"><a href="form.html">ФОРМА ОТЗЫВА</a></li>
           <li class="cite-nav__item"><a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML ACADEMY</a></li>
         </ul>
@@ -21,43 +22,49 @@
       </nav>
     </header>
     <main class="page-main">
-      <header class="page-main__header gallery-main-header">
-        <img class="gallery-main-header__bg-img" src="#" width="" height="" alt="пейзаж седоны">
+      <header class="page-main__header">
+        <img class="gallery-main-header__img" src="img\text-sedona.svg" width="" height="">
       </header>
       <section class="gallery">
-        <h1 class="gallery__title">Фото и видео</h1>
-        <p class="gallery__description">Не можете решиться на путешествие из-за курса? Фотографии помогут Вам забыть о политике и экономике</p>
+        <div class="gallery__wrapper">
+          <h1 class="gallery__title">Фото и видео</h1>
+          <p class="gallery__description">Не можете решиться на путешествие из-за курса? Фотографии помогут Вам забыть о политике и экономике</p>
+        </div>
         <ul class="gallery__list pictures-list">
           <li class="pictures-list__item">
             <a class="pictures-list__link" href="#"><img class="pictures-list__img" src="#" width="" height="" alt="фото1"></a>
             <p class="pictures-list__name">Народные просторы</p>
             <p class="pictures-list__author">Автор фото: Борис</p>
-            <span class="pictures-list__likes"></span>
+            <span class="pictures-list__likes">1350</span>
           </li>
           <li class="pictures-list__item">
             <a class="pictures-list__link" href="#"><img class="pictures-list__img" src="#" width="" height="" alt="фото2"></a>
             <p class="pictures-list__name">Местная растительность</p>
             <p class="pictures-list__author">Автор фото: Сергей</p>
-            <span class="pictures-list__likes"></span>
+            <span class="pictures-list__likes">143</span>
           </li>
           <li class="pictures-list__item">
             <a class="pictures-list__link" href="#"><img class="pictures-list__img" src="#" width="" height="" alt="фото3"></a>
             <p class="pictures-list__name">Дорога на север</p>
             <p class="pictures-list__author">Автор фото: Петр</p>
-            <span class="pictures-list__likes"></span>
+            <span class="pictures-list__likes">96</span>
           </li>
           <li class="pictures-list__item">
             <a class="pictures-list__link" href="#"><img class="pictures-list__img" src="#" width="" height="" alt="фото4"></a>
             <p class="pictures-list__name">Мост дьявола</p>
             <p class="pictures-list__author">Автор фото: Антон</p>
-            <span class="pictures-list__likes"></span>
+            <span class="pictures-list__likes">254</span>
           </li>
         </ul>
         <ul class="gallery__list video-list">
           <li class="video-list__item">
             <p class="video-list__title">Все еще сомневайтесь?</p>
             <p class="video-list__description">Смотрите видеопрезентацию, и скорее за билетами, пока они не подорожали в очередной раз!</p>
-            <video class="video-list__clip" width="" height="" src="#" controls>
+            <img class="video-list__clip" src="#" width="" height="">
+            <div class="video-list__player">
+              <span class="video-list__line"></span>
+              <span class="video-list__handle" tabindex="0" aria-label="ползунок проигрывателя"></span>
+            </div>
             <span class="video-list__back" tabindex="0" aria-label="показать с начала"></span>
             <span class="video-list__subtitles" tabindex="0" aria-label="показать субтитры"></span>
             <span class="video-list__large" tabindex="0" aria-label="развернуть на весь экран"></span>
