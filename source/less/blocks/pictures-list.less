@@ -1,4 +1,10 @@
 .pictures-list {
+  &__item {
+    min-height: 416px;
+    border-bottom: 1px solid @grey-border;
+    padding: 20px;
+  }
+
   &__name {
     font-size: @regular-size;
     font-weight: bold;
@@ -9,11 +15,6 @@
     font-size: @regular-size;
     line-height: 24px;
     text-transform: none;
-  }
-
-  &__item {
-    border-bottom: 1px solid @grey-border;
-    padding-top: 20px;
   }
 
   &__likes {

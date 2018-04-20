@@ -1,7 +1,17 @@
 .reasons-list {
+  display: flex;
+  flex-direction: column;
   list-style-type: none;
   padding: 0;
   margin: 0;
+
+  &__text {
+    width: 275px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
 
   &__title {
     font-size: 21px;
@@ -25,11 +35,16 @@
 }
 
 .reasons-list__item {
-  background-color: @grey;
+  &--bg-grey {
+    min-height: 168px;
+    text-align: center;
+    background-color: @grey;
+  }
 
   &--bg-blue {
-    background-color: @blue;
+    height: 450px;
     color: @white;
+    background-color: @blue;
   }
 
   &--add-info {
