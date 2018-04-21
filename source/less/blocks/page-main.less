@@ -18,3 +18,23 @@
     padding: 20px;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .page-main {
+    width: @tablet-width;
+    margin: 0 auto;
+  }
+
+  .page-main__header {
+    &--index {
+      height: 518px;
+      padding-top: 77px;
+      padding-left: 155px;
+
+      img {
+        width: 460px;
+        height: 350px;
+      }
+    }
+  }
+}

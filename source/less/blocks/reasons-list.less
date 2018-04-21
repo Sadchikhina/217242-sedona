@@ -52,3 +52,47 @@
     padding-left: 70px;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .reasons-list {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__text {
+      width: 170px;
+      padding-top: 10px;
+    }
+
+    &__title {
+      line-height: 26px;
+    }
+
+    &__img--bridge {
+      order: -1;
+    }
+  }
+
+  .reasons-list__item {
+    &--bg-grey {
+      width: 256px;
+      height: 256px;
+      padding-top: 30px;
+      padding-left: 54px;
+      padding-right: 53px;
+    }
+
+    &--bg-blue {
+      display: flex;
+      width: 100%;
+      height: 256px;
+    }
+
+    &--add-info {
+      background-color: @white;
+      width: 170px;
+      height: 330px;
+      padding-left: 0;
+    }
+  }
+}
