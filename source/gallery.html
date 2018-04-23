@@ -9,91 +9,93 @@
     <meta name="description" content="">
   </head>
   <body>
-    <header class="page-header">
-      <nav class="main-nav">
-        <ul class="main-nav__list cite-nav">
-          <li class="cite-nav__item"><a href="index.html">ГЛАВНАЯ</a></li>
-          <li class="cite-nav__item  cite-nav__item--active"><a>ФОТО И ВИДЕО</a></li>
-          <li class="cite-nav__item"><a href="form.html">ФОРМА ОТЗЫВА</a></li>
-          <li class="cite-nav__item"><a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML ACADEMY</a></li>
-        </ul>
-        <a class="page-header__logo"><img class="page-header__logo-img" src="#" width="" height="" alt="логотип"></a>
-        <button class="main-nav__close-button visually-hidden" type="button"></button>
-        <button class="main-nav__open-button" type="button"></button>
-      </nav>
-    </header>
-    <main class="page-main">
-      <header class="page-main__header page-main__header--inner">
-        <img class="page-main__img" src="img\text-sedona.svg" width="229px" height="39px">
+    <div class="content-wrapper">
+      <header class="page-header">
+        <nav class="main-nav">
+          <ul class="main-nav__list cite-nav">
+            <li class="cite-nav__item"><a href="index.html">ГЛАВНАЯ</a></li>
+            <li class="cite-nav__item  cite-nav__item--active"><a>ФОТО И ВИДЕО</a></li>
+            <li class="cite-nav__item"><a href="form.html">ФОРМА ОТЗЫВА</a></li>
+            <li class="cite-nav__item"><a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML ACADEMY</a></li>
+          </ul>
+          <a class="page-header__logo"><img class="page-header__logo-img" src="#" width="" height="" alt="логотип"></a>
+          <button class="main-nav__close-button visually-hidden" type="button"></button>
+          <button class="main-nav__open-button" type="button"></button>
+        </nav>
       </header>
-      <section class="gallery">
-        <div class="gallery__wrapper">
-          <h1 class="gallery__title">Фото и видео</h1>
-          <p class="gallery__description">Не можете решиться на путешествие из-за курса? Фотографии помогут Вам забыть о политике и экономике</p>
-        </div>
-        <ul class="gallery__list pictures-list">
-          <li class="pictures-list__item">
-            <a class="pictures-list__link" href="#"><img class="pictures-list__img" src="img/photo-sunset-mobile@1x.jpg" width="280px" height="280px" alt="фото1"></a>
-            <div class="pictures-list__description">
-              <p class="pictures-list__name">Неродные просторы</p>
-              <p class="pictures-list__author">Автор фото: Борис</p>
-            </div>
-            <span class="pictures-list__likes">1350</span>
-          </li>
-          <li class="pictures-list__item">
-            <a class="pictures-list__link" href="#"><img class="pictures-list__img" src="img/photo-cactus-mobile@1x.jpg" width="280px" height="280px" alt="фото2"></a>
-            <div class="pictures-list__description">
-              <p class="pictures-list__name">Местная растительность</p>
-              <p class="pictures-list__author">Автор фото: Сергей</p>
-            </div>
-            <span class="pictures-list__likes">143</span>
-          </li>
-          <li class="pictures-list__item pictures-list__item--bg-grey">
-            <a class="pictures-list__link" href="#"><img class="pictures-list__img" src="img/photo-roads-mobile@1x.jpg" width="280px" height="280px" alt="фото3"></a>
-            <div class="pictures-list__description">
-              <p class="pictures-list__name">Дорога на север</p>
-              <p class="pictures-list__author">Автор фото: Петр</p>
-            </div>
-            <span class="pictures-list__likes">96</span>
-          </li>
-          <li class="pictures-list__item">
-            <a class="pictures-list__link" href="#"><img class="pictures-list__img" src="img/photo-bridge-mobile@1x.jpg" width="280px" height="280px" alt="фото4"></a>
-            <div class="pictures-list__description">
-              <p class="pictures-list__name">Мост дьявола</p>
-              <p class="pictures-list__author">Автор фото: Антон</p>
-            </div>
-            <span class="pictures-list__likes">254</span>
-          </li>
-        </ul>
-        <ul class="gallery__list video-list">
-          <li class="video-list__item">
-            <div class="video-list__wrapper">
-              <p class="video-list__title">Все еще сомневайтесь?</p>
-              <p class="video-list__description">Смотрите видеопрезентацию, и скорее за билетами, пока они не подорожали в очередной раз!</p>
-            </div>
-            <img class="video-list__clip" src="img/video-mobile@1x.jpg" width="320px" height="280px">
-            <div class="video-list__player">
-              <span class="video-list__line"></span>
-              <span class="video-list__handle" tabindex="0" aria-label="ползунок проигрывателя"></span>
-            </div>
-            <span class="video-list__back" tabindex="0" aria-label="показать с начала"></span>
-            <span class="video-list__subtitles" tabindex="0" aria-label="показать субтитры"></span>
-            <span class="video-list__large" tabindex="0" aria-label="развернуть на весь экран"></span>
-          </li>
-        </ul>
-      </section>
-    </main>
-    <footer class="page-footer">
-      <section class="contacts">
-        <h2 class="visually-hidden">Контакты в социальных сетях</h4>
-        <b class="contacts__tag">#visitsedona</b>
-        <ul class="contacts__list social-list">
-          <li class="social-list__item social-list__item--twitter"><a href="https://twitter.com/" target="_blank">tw</a></li>
-          <li class="social-list__item social-list__item--fb"><a href="https://www.facebook.com/" target="_blank">fb</a></li>
-          <li class="social-list__item social-list__item--youtube"><a href="https://www.youtube.com/" target="_blank">YT</a></li>
-        </ul>
-        <p class="contacts__developer">разработано<a href="https://htmlacademy.ru/intensive/adaptive"></a></p>
-      </section>
-    </footer>
+      <main class="page-main">
+        <header class="page-main__header page-main__header--inner">
+          <img class="page-main__img" src="img\text-sedona.svg" width="229px" height="39px">
+        </header>
+        <section class="gallery">
+          <div class="gallery__wrapper">
+            <h1 class="gallery__title">Фото и видео</h1>
+            <p class="gallery__description">Не можете решиться на путешествие из-за курса? Фотографии помогут Вам забыть о политике и экономике</p>
+          </div>
+          <ul class="gallery__list pictures-list">
+            <li class="pictures-list__item">
+              <a class="pictures-list__link" href="#"><img class="pictures-list__img" src="img/photo-sunset-mobile@1x.jpg" width="280px" height="280px" alt="фото1"></a>
+              <div class="pictures-list__description">
+                <p class="pictures-list__name">Неродные просторы</p>
+                <p class="pictures-list__author">Автор фото: Борис</p>
+              </div>
+              <span class="pictures-list__likes">1350</span>
+            </li>
+            <li class="pictures-list__item">
+              <a class="pictures-list__link" href="#"><img class="pictures-list__img" src="img/photo-cactus-mobile@1x.jpg" width="280px" height="280px" alt="фото2"></a>
+              <div class="pictures-list__description">
+                <p class="pictures-list__name">Местная растительность</p>
+                <p class="pictures-list__author">Автор фото: Сергей</p>
+              </div>
+              <span class="pictures-list__likes">143</span>
+            </li>
+            <li class="pictures-list__item pictures-list__item--bg-grey">
+              <a class="pictures-list__link" href="#"><img class="pictures-list__img" src="img/photo-roads-mobile@1x.jpg" width="280px" height="280px" alt="фото3"></a>
+              <div class="pictures-list__description">
+                <p class="pictures-list__name">Дорога на север</p>
+                <p class="pictures-list__author">Автор фото: Петр</p>
+              </div>
+              <span class="pictures-list__likes">96</span>
+            </li>
+            <li class="pictures-list__item">
+              <a class="pictures-list__link" href="#"><img class="pictures-list__img" src="img/photo-bridge-mobile@1x.jpg" width="280px" height="280px" alt="фото4"></a>
+              <div class="pictures-list__description">
+                <p class="pictures-list__name">Мост дьявола</p>
+                <p class="pictures-list__author">Автор фото: Антон</p>
+              </div>
+              <span class="pictures-list__likes">254</span>
+            </li>
+          </ul>
+          <ul class="gallery__list video-list">
+            <li class="video-list__item">
+              <div class="video-list__wrapper">
+                <p class="video-list__title">Все еще сомневайтесь?</p>
+                <p class="video-list__description">Смотрите видеопрезентацию, и скорее за билетами, пока они не подорожали в очередной раз!</p>
+              </div>
+              <img class="video-list__clip" src="img/video-mobile@1x.jpg" width="320px" height="280px">
+              <div class="video-list__player">
+                <span class="video-list__line"></span>
+                <span class="video-list__handle" tabindex="0" aria-label="ползунок проигрывателя"></span>
+              </div>
+              <span class="video-list__back" tabindex="0" aria-label="показать с начала"></span>
+              <span class="video-list__subtitles" tabindex="0" aria-label="показать субтитры"></span>
+              <span class="video-list__large" tabindex="0" aria-label="развернуть на весь экран"></span>
+            </li>
+          </ul>
+        </section>
+      </main>
+      <footer class="page-footer">
+        <section class="contacts">
+          <h2 class="visually-hidden">Контакты в социальных сетях</h4>
+          <b class="contacts__tag">#visitsedona</b>
+          <ul class="contacts__list social-list">
+            <li class="social-list__item social-list__item--twitter"><a href="https://twitter.com/" target="_blank">tw</a></li>
+            <li class="social-list__item social-list__item--fb"><a href="https://www.facebook.com/" target="_blank">fb</a></li>
+            <li class="social-list__item social-list__item--youtube"><a href="https://www.youtube.com/" target="_blank">YT</a></li>
+          </ul>
+          <p class="contacts__developer">разработано<a href="https://htmlacademy.ru/intensive/adaptive"></a></p>
+        </section>
+      </footer>
+    </div>
   </body>
 </html>
