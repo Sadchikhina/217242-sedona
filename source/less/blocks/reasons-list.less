@@ -7,19 +7,25 @@
 
   &__text {
     width: 255px;
-    height: 191px;
     margin: 0 auto;
     text-align: center;
-    padding-top: 20px;
   }
 
   &__text--bg-blue {
-    width: 275px;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 64px;
+    padding-bottom: 25px;
+    background-color: @blue;
   }
 
   &__title {
-    font-size: 21px;
+    font-size: @title-size;
     line-height: 10px;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 13px;
   }
 
   &__number,
@@ -30,6 +36,9 @@
 
   &__add-info-title {
     font-size: @title-size;
+    padding: 0;
+    margin: 0;
+    padding-top: 21px;
   }
 
   &__add-info-description {
@@ -44,16 +53,14 @@
     min-height: 168px;
     text-align: center;
     background-color: @grey;
+    padding-top: 27px;
   }
 
   &--bg-blue {
-    height: 451px;
     color: @white;
-    background-color: @blue;
   }
 
   &--add-info {
-    height: 139px;
     background-color: @white;
     padding-left: 70px;
     padding-right: 20px;
