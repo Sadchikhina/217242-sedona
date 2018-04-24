@@ -20,7 +20,7 @@
 
     a {
       color: @white;
-      font-size: 18px;
+      font-size: @title-size;
       line-height: 40px;
       font-weight: bold;
       text-decoration: none;
@@ -29,14 +29,28 @@
 
 @media (min-width: @tablet-width) {
   .cite-nav {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     background-color: @white;
+    padding-top: 7px;
+
+    &__item:last-child {
+      box-shadow: none;
+      margin-right: 0;
+    }
+
+    &__item:nth-child(2) {
+      margin-right: 160px;
+    }
 
     &__item {
+      padding: 0;
+      margin-right: 76px;
       border: none;
 
       a {
+        font-size: @regular-size;
         color: @black;
       }
     }
@@ -48,13 +62,5 @@
     display: flex;
     justify-content: space-between;
     background-color: @white;
-
-    &__item {
-      border: none;
-
-      a {
-        color: @black;
-      }
-    }
   }
 }
