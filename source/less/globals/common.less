@@ -4,6 +4,19 @@ body {
   color: @black;
   line-height: 26px;
   background-color: @white;
+  min-width: 320px;
+}
+
+@media (min-width: @tablet-width) {
+  body {
+    min-width: @tablet-width;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  body {
+    min-width: @desctop-width;
+  }
 }
 
 html {

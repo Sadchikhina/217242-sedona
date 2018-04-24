@@ -1,4 +1,73 @@
+.page-main {
+  width: 100%;
+}
+
 .page-main__header {
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
+  background-color: @blue-bg;
+
+  &--index {
+    height: 389px;
+    padding: 20px;
+  }
+
+  &--inner {
+    height: 158px;
+    padding: 52px;
+  }
+
+}
+
+@media (min-width: @tablet-width) {
+  .page-main__header {
+    &--index {
+      height: 518px;
+      padding-top: 77px;
+      padding-left: 155px;
+
+      img {
+        width: 460px;
+        height: 350px;
+      }
+    }
+
+    &--inner {
+      height: 290px;
+      padding-top: 95px;
+      padding-left: 155px;
+
+      img {
+        width: 460px;
+        height: 78px;
+      }
+    }
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .page-main__header {
+    &--index {
+      height: 518px;
+      padding-top: 77px;
+      padding-left: 370px;
+
+      img {
+        width: 460px;
+        height: 350px;
+      }
+    }
+
+    &--inner {
+      height: 290px;
+      padding-top: 95px;
+      padding-left: 370px;
+
+      img {
+        width: 460px;
+        height: 78px;
+      }
+    }
+  }
 }

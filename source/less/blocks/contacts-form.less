@@ -1,4 +1,6 @@
 .contacts-form {
+  min-height: 288px;
+
   &__label {
     font-size: @title-size;
     font-weight: bold;
@@ -14,5 +16,17 @@
 
   &__input-label {
     font-size: @regular-size;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contacts-form {
+    width: 100%;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .contacts-form {
+    width: 100%;
   }
 }

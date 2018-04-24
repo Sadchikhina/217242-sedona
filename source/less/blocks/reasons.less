@@ -1,9 +1,38 @@
 .reasons {
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    height: 202px;
+    margin: 0 auto;
+  }
+
   &__title {
     font-size: @title-size;
+    text-align: center;
   }
 
   &__intro {
     font-size: @regular-size;
+    text-align: center;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .reasons {
+    &__wrapper {
+      width: 500px;
+      height: 206px;
+    }
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .reasons {
+    &__wrapper {
+      width: 500px;
+      height: 206px;
+    }
   }
 }

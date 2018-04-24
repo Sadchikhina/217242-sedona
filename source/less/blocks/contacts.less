@@ -1,4 +1,8 @@
 .contacts {
+  height: 243px;
+  padding-top: 43px;
+  text-align: center;
+
   &__tag {
     font-size: 21px;
     font-weight: bold;
@@ -6,5 +10,28 @@
 
   &__developer {
     font-size: @regular-size;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    height: 120px;
+    max-width: 648px;
+    margin: 0 auto;
+    padding-top: 0;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .contacts {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    max-width: 960px;
+    margin: 0 auto;
+    padding-top: 0;
   }
 }

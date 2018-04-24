@@ -1,5 +1,7 @@
 .form {
   &__wrapper {
+    min-height: 203px;
+    text-align: center;
     border-bottom: 1px solid @grey-border;
   }
 
@@ -10,5 +12,27 @@
   &__description {
     font-size: @regular-size;
     line-height: @regular-line-height;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form {
+    max-width: 648px;
+    margin: 0 auto;
+
+    &__wrapper {
+      border-bottom: none;
+    }
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .form {
+    max-width: 960px;
+    margin: 0 auto;
+
+    &__wrapper {
+      border-bottom: none;
+    }
   }
 }

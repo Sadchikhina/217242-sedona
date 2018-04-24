@@ -1,4 +1,6 @@
 .impression-form {
+  min-height: 288px;
+
   &__label {
     font-size: @title-size;
     font-weight: bold;
@@ -8,5 +10,19 @@
     font-size: @title-size;
     text-transform: none;
     font-weight: bold;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .impression-form {
+    width: 50%;
+    border-right: 1px solid @grey-border;
+    order: -1;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .impression-form {
+    width: 50%;
   }
 }

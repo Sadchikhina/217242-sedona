@@ -1,4 +1,8 @@
 .hotel-request {
+  min-height: 287px;
+  padding-top: 33px;
+  text-align: center;
+
   &__title {
     font-size: 21px;
   }
@@ -14,5 +18,22 @@
     text-decoration: none;
     color: @white;
     background-color: @blue;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .hotel-request {
+    height: 318px;
+
+    &__wrapper {
+      width: 462px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .hotel-request {
+    height: 331px;
   }
 }

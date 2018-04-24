@@ -1,6 +1,21 @@
 .reasons-list {
+  display: flex;
+  flex-direction: column;
   list-style-type: none;
-  padding-left: 0;
+  padding: 0;
+  margin: 0;
+
+  &__text {
+    width: 255px;
+    height: 191px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  &__text--bg-blue {
+    width: 275px;
+  }
 
   &__title {
     font-size: 21px;
@@ -24,15 +39,103 @@
 }
 
 .reasons-list__item {
-  background-color: @grey;
+
+  &--bg-grey {
+    min-height: 168px;
+    text-align: center;
+    background-color: @grey;
+  }
 
   &--bg-blue {
-    background-color: @blue;
+    height: 451px;
     color: @white;
+    background-color: @blue;
   }
 
   &--add-info {
+    height: 139px;
     background-color: @white;
     padding-left: 70px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .reasons-list {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__text {
+      width: 160px;
+      padding-top: 10px;
+    }
+
+    &__text--bg-blue {
+      width: 180px;
+    }
+
+    &__title {
+      line-height: 26px;
+    }
+
+    &__img--bridge {
+      order: -1;
+    }
+
+    &__add-info-wrapper {
+      width: 165px;
+      margin: 0 auto;
+    }
+  }
+
+  .reasons-list__item {
+    &--bg-grey {
+      height: 256px;
+      padding-top: 30px;
+    }
+
+    &--bg-blue {
+      display: flex;
+      width: 100%;
+      height: 256px;
+    }
+
+    &--add-info {
+      text-align: center;
+      background-color: @white;
+      height: 330px;
+      padding-top: 60px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .reasons-list {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .reasons-list__item {
+    &--bg-grey {
+      padding-top: 30px;
+      padding-left: 54px;
+      padding-right: 53px;
+    }
+
+    &--bg-blue {
+      display: flex;
+      width: 100%;
+      height: 260px;
+    }
+
+    &--add-info {
+      background-color: @white;
+      height: 330px;
+      padding-left: 0;
+    }
   }
 }
