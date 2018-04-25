@@ -5,18 +5,13 @@
   padding: 0;
   margin: 0;
 
-  &__text {
-    width: 255px;
-    margin: 0 auto;
-    text-align: center;
-  }
-
   &__text--bg-blue {
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 64px;
     padding-bottom: 25px;
+    text-align: center;
     background-color: @blue;
   }
 
@@ -50,14 +45,16 @@
 .reasons-list__item {
 
   &--bg-grey {
-    min-height: 168px;
     text-align: center;
     background-color: @grey;
     padding-top: 27px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
 
   &--bg-blue {
     color: @white;
+    outline: 1px solid @black;
   }
 
   &--add-info {
@@ -105,7 +102,6 @@
       padding-bottom: 35px;
       padding-left: 60px;
       padding-right: 60px;
-
     }
 
     &--bg-blue {
