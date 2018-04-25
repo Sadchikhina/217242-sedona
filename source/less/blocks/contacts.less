@@ -3,6 +3,10 @@
   flex-direction: column;
   padding-top: 29px;
 
+  &__list {
+    margin-bottom: 28px;
+  }
+
   &__tag {
     font-size: 21px;
     font-weight: bold;
@@ -11,8 +15,15 @@
   }
 
   &__developer {
+    position: relative;
     font-size: @regular-size;
     margin-left: 95px;
+
+    svg {
+      position: absolute;
+      left: 102px;
+      top: -2px;
+    }
   }
 }
 

@@ -4,6 +4,7 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+  margin-bottom: 7px;
 
   &__text--bg-blue {
     width: 100%;
@@ -11,8 +12,13 @@
     padding-right: 20px;
     padding-top: 64px;
     padding-bottom: 25px;
+    color: @white;
     text-align: center;
     background-color: @blue;
+  }
+
+  &__text--short {
+    padding-top: 47px;
   }
 
   &__title {
@@ -29,35 +35,79 @@
     line-height: 21px;
   }
 
+  &__img {
+    display: block;
+  }
+
+  &__add-info--motel {
+    position: relative;
+    padding-top: 35px;
+
+    svg {
+      position: absolute;
+      top: 9px;
+      left: 22px;
+      width: 37px;
+      fill: @blue;
+    }
+  }
+
+  &__add-info--souvenir {
+    position: relative;
+    padding-top: 26px;
+
+    svg {
+      position: absolute;
+      top: -2px;
+      left: 25px;
+      width: 31px;
+      fill: @blue;
+    }
+  }
+
+  &__add-info--food {
+    position: relative;
+
+    svg {
+      position: absolute;
+      top: -23px;
+      left: 20px;
+      width: 37px;
+      fill: @blue;
+    }
+  }
+
   &__add-info-title {
     font-size: @title-size;
     padding: 0;
     margin: 0;
-    padding-top: 21px;
+    padding-bottom: 15px;
   }
 
   &__add-info-description {
     font-size: @regular-size;
     line-height: 21px;
+    padding: 0;
+    margin: 0;
   }
 }
 
 .reasons-list__item {
+  &:last-child {
+    padding-bottom: 13px;
+  }
 
   &--bg-grey {
     text-align: center;
     background-color: @grey;
-    padding-top: 27px;
+    padding-top: 35px;
     padding-left: 35px;
     padding-right: 35px;
-  }
-
-  &--bg-blue {
-    color: @white;
-    outline: 1px solid @black;
+    padding-bottom: 14px;
   }
 
   &--add-info {
+    min-height: 139px;
     background-color: @white;
     padding-left: 70px;
     padding-right: 20px;
