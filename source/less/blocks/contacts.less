@@ -5,6 +5,7 @@
 
   &__list {
     margin-bottom: 28px;
+    margin-left: 83px;
   }
 
   &__tag {
@@ -29,16 +30,31 @@
 
 @media (min-width: @tablet-width) {
   .contacts {
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: baseline;
     max-width: 648px;
     margin: 0 auto;
     padding-top: 0;
+
+    &__list {
+      margin-left: 0;
+    }
+
+    &__tag {
+      margin-left: 0;
+    }
+
+    &__developer {
+      margin-left: 0;
+      margin-right: 41px;
+    }
   }
 }
 
 @media (min-width: @desctop-width) {
   .contacts {
+    flex-direction: row;
     justify-content: space-around;
     align-items: baseline;
     max-width: 960px;
