@@ -1,11 +1,40 @@
+.main-nav {
+  position: relative;
+
+  &__logo {
+    position: absolute;
+    left: 110px;
+    z-index: 1;
+  }
+
+  &__open-button {
+    position: absolute;
+    bottom: -30px;
+    right: 20px;
+    width: 23px;
+    height: 4px;
+    background-color: @blue;
+    border: none;
+    border-bottom: 1px solid @light-blue-btn;
+    border-top: 1px solid @light-blue-btn;
+    box-shadow:
+      0 8px 0 0 @blue,
+      0 -9px 0 0 @blue;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .main-nav {
     display: flex;
-    max-width: 648px;
+    width: 721px;
     margin: 0 auto;
 
     &__open-button {
       display: none;
+    }
+
+    &__logo {
+      left: 311px;
     }
   }
 }
@@ -16,8 +45,5 @@
     max-width: 960px;
     margin: 0 auto;
 
-    &__open-button {
-      display: none;
-    }
   }
 }

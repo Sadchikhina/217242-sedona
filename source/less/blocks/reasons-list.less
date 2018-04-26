@@ -4,22 +4,37 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
-
-  &__text {
-    width: 255px;
-    height: 191px;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 20px;
-  }
+  margin-bottom: 7px;
 
   &__text--bg-blue {
-    width: 275px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 64px;
+    padding-bottom: 25px;
+    color: @white;
+    text-align: center;
+    background-color: @blue;
+  }
+
+  &__text--short {
+    padding-top: 47px;
+
+    p {
+      padding-top: 5px;
+    }
+  }
+
+  &__new-line {
+    display: block;
+    margin-bottom: -6px;
   }
 
   &__title {
-    font-size: 21px;
+    font-size: @title-size;
     line-height: 10px;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 13px;
   }
 
   &__number,
@@ -28,32 +43,90 @@
     line-height: 21px;
   }
 
+  &__img {
+    display: block;
+  }
+
+  &__add-info--motel {
+    position: relative;
+    padding-top: 35px;
+
+    svg {
+      position: absolute;
+      top: 9px;
+      left: 22px;
+      width: 37px;
+      fill: @blue;
+    }
+  }
+
+  &__add-info--souvenir {
+    position: relative;
+    padding-top: 26px;
+
+    svg {
+      position: absolute;
+      top: -2px;
+      left: 25px;
+      width: 31px;
+      fill: @blue;
+    }
+  }
+
+  &__add-info--food {
+    position: relative;
+
+    svg {
+      position: absolute;
+      top: -23px;
+      left: 20px;
+      width: 37px;
+      fill: @blue;
+    }
+  }
+
   &__add-info-title {
     font-size: @title-size;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 15px;
   }
 
   &__add-info-description {
     font-size: @regular-size;
     line-height: 21px;
+    padding: 0;
+    margin: 0;
   }
 }
 
 .reasons-list__item {
+  position: relative;
 
-  &--bg-grey {
-    min-height: 168px;
-    text-align: center;
-    background-color: @grey;
+  &:last-child {
+    padding-bottom: 13px;
   }
 
-  &--bg-blue {
-    height: 451px;
-    color: @white;
-    background-color: @blue;
+  &:first-child::before {
+    content: "";
+    position: absolute;
+    top: -21px;
+    width: 320px;
+    height: 37px;
+    background-image: url("../img/bg-triangle.svg");
+  }
+
+  &--bg-grey {
+    text-align: center;
+    background-color: @grey;
+    padding-top: 35px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 14px;
   }
 
   &--add-info {
-    height: 139px;
+    min-height: 139px;
     background-color: @white;
     padding-left: 70px;
     padding-right: 20px;
@@ -63,19 +136,23 @@
 @media (min-width: @tablet-width) {
   .reasons-list {
     flex-direction: row;
-    justify-content: space-between;
     flex-wrap: wrap;
 
-    &__text {
-      width: 160px;
-      padding-top: 10px;
+    &__text--bg-blue {
+      padding-top: 45px;
     }
 
-    &__text--bg-blue {
-      width: 180px;
+    &__img {
+      height: 255px;
+    }
+
+    &__description {
+      padding-left: 28px;
+      padding-right: 22px;
     }
 
     &__title {
+      font-size: 21px;
       line-height: 26px;
     }
 
@@ -84,40 +161,74 @@
     }
 
     &__add-info-wrapper {
-      width: 165px;
+      width: 180px;
       margin: 0 auto;
+      padding-top: 25px;
+      padding-left: 10px;
+      padding-bottom: 15px;
+    }
+
+    &__add-info-title {
+      font-size: 21px;
+      padding-bottom: 21px;
+    }
+
+    &__text--bg-grey {
+      width: 210px;
+
+      h2 {
+        padding: 0;
+        padding-bottom: 10px;
+      }
+
+      span {
+        display: block;
+        margin-bottom: 21px;
+      }
+    }
+
+    &__text--narrow {
+      padding-left: 0;
+      padding-right: 11px;
+
+      h2 {
+        display: block;
+        text-align: center;
+        width: 110px;
+        margin: 0 auto;
+        padding-left: 10px;
+      }
     }
   }
 
   .reasons-list__item {
+    &:first-child::before {
+      display: none;
+    }
+
     &--bg-grey {
-      height: 256px;
-      padding-top: 30px;
+      padding-top: 46px;
+      padding-bottom: 30px;
+      padding-left: 25px;
     }
 
     &--bg-blue {
       display: flex;
       width: 100%;
-      height: 256px;
     }
 
     &--add-info {
       text-align: center;
       background-color: @white;
-      height: 330px;
-      padding-top: 60px;
+      padding-top: 134px;
       padding-left: 0;
       padding-right: 0;
+      padding-bottom: 46px;
     }
   }
 }
 
 @media (min-width: @desctop-width) {
-  .reasons-list {
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
 
   .reasons-list__item {
     &--bg-grey {
@@ -137,5 +248,5 @@
       height: 330px;
       padding-left: 0;
     }
-  }
-}
+   }
+ }
