@@ -92,8 +92,19 @@
 }
 
 .reasons-list__item {
+  position: relative;
+
   &:last-child {
     padding-bottom: 13px;
+  }
+
+  &:first-child::before {
+    content: "";
+    position: absolute;
+    top: -21px;
+    width: 320px;
+    height: 37px;
+    background-image: url("../img/bg-triangle.svg");
   }
 
   &--bg-grey {
@@ -160,6 +171,10 @@
   }
 
   .reasons-list__item {
+    &:first-child::before {
+      display: none;
+    }
+    
     &--bg-grey {
       padding-top: 46px;
       padding-bottom: 30px;
