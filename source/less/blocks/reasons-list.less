@@ -18,6 +18,15 @@
 
   &__text--short {
     padding-top: 47px;
+
+    p {
+      padding-top: 5px;
+    }
+  }
+
+  &__new-line {
+    display: block;
+    margin-bottom: -6px;
   }
 
   &__title {
@@ -166,7 +175,29 @@
 
     &__text--bg-grey {
       width: 210px;
-      outline: 1px solid @black;
+
+      h2 {
+        padding: 0;
+        padding-bottom: 10px;
+      }
+
+      span {
+        display: block;
+        margin-bottom: 21px;
+      }
+    }
+
+    &__text--narrow {
+      padding-left: 0;
+      padding-right: 11px;
+
+      h2 {
+        display: block;
+        text-align: center;
+        width: 110px;
+        margin: 0 auto;
+        padding-left: 10px;
+      }
     }
   }
 
@@ -174,7 +205,7 @@
     &:first-child::before {
       display: none;
     }
-    
+
     &--bg-grey {
       padding-top: 46px;
       padding-bottom: 30px;
