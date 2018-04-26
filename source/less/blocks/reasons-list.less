@@ -265,6 +265,12 @@
 }
 
 @media (min-width: @desctop-width) {
+  .reasons-list {
+    &__text--bg-blue {
+      width: 380px;
+      margin: 0 auto;
+    }
+  }
 
   .reasons-list__item {
     &--bg-grey {
@@ -274,14 +280,13 @@
     }
 
     &--bg-blue {
+      background-color: @blue;
       display: flex;
       width: 100%;
-      height: 260px;
     }
 
     &--add-info {
       background-color: @white;
-      height: 330px;
       padding-left: 0;
     }
    }
