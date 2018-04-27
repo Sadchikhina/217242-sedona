@@ -4,27 +4,24 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 7px;
+  margin-bottom: 3px;
 
-  &__text--bg-blue {
+  &__bg-blue-wrapper {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 64px;
-    padding-bottom: 25px;
+    padding-bottom: 27px;
     color: @white;
     text-align: center;
     background-color: @blue;
   }
 
-  &__text--short {
-    padding-top: 47px;
-
-    p {
-      padding-top: 5px;
-    }
+  &__bg-blue-wrapper--short {
+    padding-top: 46px;
   }
 
-  &__title {
+  &__bg-blue-title,
+  &__bg-grey-title {
     font-size: @title-size;
     line-height: 10px;
     padding: 0;
@@ -32,8 +29,10 @@
     padding-bottom: 12px;
   }
 
-  &__number,
-  &__description {
+  &__bg-blue-number,
+  &__bg-grey-number,
+  &__bg-blue-description,
+  &__bg-grey-description {
     font-size: @regular-size;
     line-height: 21px;
   }
@@ -71,6 +70,10 @@
   &__add-info--food {
     position: relative;
 
+    h2 {
+      margin-top: -2px;
+    }
+
     svg {
       position: absolute;
       top: -23px;
@@ -84,7 +87,7 @@
     font-size: @title-size;
     padding: 0;
     margin: 0;
-    padding-bottom: 15px;
+    padding-bottom: 14px;
   }
 
   &__add-info-description {
@@ -117,7 +120,7 @@
     padding-top: 35px;
     padding-left: 35px;
     padding-right: 35px;
-    padding-bottom: 14px;
+    padding-bottom: 15px;
   }
 
   &--add-info {
@@ -133,7 +136,7 @@
     flex-direction: row;
     flex-wrap: wrap;
 
-    &__text--bg-blue {
+    &__bg-blue-wrapper {
       padding-top: 45px;
     }
 
@@ -145,12 +148,14 @@
       height: 255px;
     }
 
-    &__description {
+    &__bg-blue-description,
+    &__bg-grey-description {
       padding-left: 28px;
       padding-right: 22px;
     }
 
-    &__title {
+    &__bg-blue-title,
+    &__bg-grey-title {
       font-size: 21px;
       line-height: 26px;
     }
@@ -200,7 +205,7 @@
       }
     }
 
-    &__text--bg-grey {
+    &__bg-grey-wrapper {
       width: 210px;
     }
   }
@@ -266,7 +271,7 @@
 
 @media (min-width: @desctop-width) {
   .reasons-list {
-    &__text--bg-blue {
+    &__bg-blue-wrapper {
       width: 380px;
       margin: 0 auto;
     }
