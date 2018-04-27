@@ -60,10 +60,18 @@
 @media (min-width: @desctop-width) {
   .contacts {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: baseline;
     max-width: 960px;
     margin: 0 auto;
     padding-top: 0;
+
+    &__tag {
+      margin-left: 0;
+    }
+
+    &__developer {
+      margin-right: 41px;
   }
+ }
 }
