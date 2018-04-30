@@ -13,7 +13,7 @@
     position: relative;
     height: 389px;
     padding-top: 90px;
-    padding-left: 20px;
+    text-align: center;
   }
 
   &--index::before {
@@ -29,8 +29,23 @@
   }
 
   &--inner {
+    position: relative;
     height: 158px;
-    padding: 52px;
+    padding-top: 52px;
+    text-align: center;
+    margin-bottom: 39px;
+  }
+
+  &--inner::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -11px;
+    width: 105%;
+    height: 28px;
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
 }
@@ -40,7 +55,7 @@
     &--index {
       height: 518px;
       padding-top: 77px;
-      padding-left: 155px;
+      text-align: center;
 
       img {
         width: 460px;
@@ -75,7 +90,7 @@
     &--inner {
       height: 290px;
       padding-top: 95px;
-      padding-left: 155px;
+      text-align: center;
 
       img {
         width: 460px;
@@ -90,7 +105,7 @@
     &--index {
       height: 518px;
       padding-top: 77px;
-      padding-left: 370px;
+      text-align: center;
 
       img {
         width: 460px;

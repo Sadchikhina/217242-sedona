@@ -1,24 +1,45 @@
 .pictures-list {
   &__item {
-    min-height: 414px;
     border-bottom: 1px solid @grey-border;
-    padding: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 17px;
+  }
+
+  &__item:nth-child(2) {
+    padding-top: 21px;
+    padding-bottom: 18px;
+  }
+
+  &__item:nth-child(3) {
+    padding-top: 23px;
+    padding-bottom: 18px;
+  }
+
+  &__img {
+    display: block;
+    margin-bottom: 15px;
   }
 
   &__name {
     font-size: @regular-size;
     font-weight: bold;
     line-height: @regular-line-height;
+    padding: 0;
+    margin: 0;
   }
 
   &__author {
     font-size: @regular-size;
     line-height: 24px;
     text-transform: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 6px;
   }
 
   &__likes {
-    padding-left: 55px;
+    padding-left: 36px;
     font-size: @regular-size;
     line-height: @regular-line-height;
     font-weight: bold;
