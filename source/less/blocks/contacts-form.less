@@ -46,6 +46,32 @@
 
 @media (min-width: @desctop-width) {
   .contacts-form {
-    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__label {
+      width: 100%;
+      margin-bottom: 58px;
+    }
+
+    &__input {
+      display: flex;
+      align-items: baseline;
+      margin-bottom: 0;
+    }
+
+    &__input-label {
+      padding-left: 0;
+      margin-right: 16px;
+    }
+
+    &__invis-desctop {
+      display: none;
+    }
+
+    &__field {
+      width: 315px;
+    }
   }
 }
