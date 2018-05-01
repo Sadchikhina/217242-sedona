@@ -18,12 +18,12 @@
   }
 
   &__field {
+    height: 54px;
     font-size: @title-size;
     font-weight: bold;
     padding-left: 21px;
     background-color: @grey-field;
     border: none;
-    height: 54px;
   }
 
   &__field--name {
@@ -45,7 +45,32 @@
 
 @media (min-width: @tablet-width) {
   .introduce-form {
-    width: 50%;
+    padding-top: 0;
+    width: 265px;
+
+    &__label {
+      font-size: 21px;
+      text-align: left;
+      margin-bottom: 58px;
+    }
+
+    &__input {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 24px;
+    }
+
+    &__field--name {
+      width: 215px;
+    }
+
+    &__field--surname {
+      width: 177px;
+    }
+
+    &__field--patronymic {
+      width: 179px;
+    }
   }
 }
 

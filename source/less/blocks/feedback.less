@@ -10,6 +10,10 @@
     border: none;
     margin-top: 42px;
   }
+
+  &__obligatory-mark {
+    display: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -19,6 +23,12 @@
 
     &__form {
       border-bottom: none;
+    }
+
+    &__obligatory-mark {
+      display: block;
+      font-size: @regular-size;
+      text-transform: uppercase;
     }
   }
 }
