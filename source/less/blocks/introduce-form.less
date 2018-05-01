@@ -1,16 +1,43 @@
 .introduce-form {
+  width: 279px;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 5px;
 
   &__label {
     font-size: @title-size;
     font-weight: bold;
+    display: block;
+    text-align: center;
+    margin-bottom: 23px;
+  }
+
+  &__input {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 23px;
   }
 
   &__field {
     font-size: @title-size;
     font-weight: bold;
-    padding-left: 22px;
+    padding-left: 21px;
     background-color: @grey-field;
     border: none;
+    height: 54px;
+  }
+
+  &__field--name {
+    width: 229px;
+  }
+
+  &__field--surname {
+    width: 190px;
+  }
+
+  &__field--patronymic {
+    width: 192px;
   }
 
   &__input-label {
