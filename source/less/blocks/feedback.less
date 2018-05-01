@@ -25,6 +25,19 @@
       border-bottom: none;
     }
 
+    &__flex-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-top: 50px;
+    }
+
+    &__button {
+      width: 325px;
+      margin-top: 0;
+    }
+
     &__obligatory-mark {
       display: block;
       font-size: @regular-size;
@@ -37,9 +50,5 @@
   .feedback {
     display: flex;
     flex-wrap: wrap;
-
-    &__form {
-      border-bottom: none;
-    }
   }
 }

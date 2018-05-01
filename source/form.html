@@ -75,30 +75,34 @@
               </p>
             </div>
             <div class="feedback__form sightseen-form">
-              <label class="sightseen-form__label">Посещенные достопримечательности</label>
-              <p class="sightseen-form__input">
-                <input class="sightseen-form__field" type="checkbox" id="devilbridge" name="devilbridge" value="Мост Дьявола" checked>
-                <label class="sightseen-form__input-label" for="devilbridge">Мост Дьявола</label>
-              </p>
-              <p class="sightseen-form__input">
-                <input class="sightseen-form__field" type="checkbox" id="mountainbell" name="mountainbell" value="Гора-Колокол" checked>
-                <label class="sightseen-form__input-label" for="mountainbell">Гора-Колокол</label>
-              </p>
-              <p class="sightseen-form__input">
-                <input class="sightseen-form__field" type="checkbox" id="slidepark" name="slidepark" value="Слайд-парк" checked>
-                <label class="sightseen-form__input-label" for="slidepark">Слайд-парк</label>
-              </p>
-              <p class="sightseen-form__input">
-                <input class="sightseen-form__field" type="checkbox" id="redrocks" name="redrocks" value="Красные скалы">
-                <label class="sightseen-form__input-label" for="redrocks">Красные скалы</label>
-              </p>
+              <label class="sightseen-form__label">Посещенные достопримечательности:</label>
+              <div class="sightseen-form__wrapper">
+                <p class="sightseen-form__input">
+                  <input class="sightseen-form__field" type="checkbox" id="devilbridge" name="devilbridge" value="Мост Дьявола" checked>
+                  <label class="sightseen-form__input-label" for="devilbridge">Мост Дьявола</label>
+                </p>
+                <p class="sightseen-form__input">
+                  <input class="sightseen-form__field" type="checkbox" id="mountainbell" name="mountainbell" value="Гора-Колокол" checked>
+                  <label class="sightseen-form__input-label" for="mountainbell">Гора-Колокол</label>
+                </p>
+                <p class="sightseen-form__input">
+                  <input class="sightseen-form__field" type="checkbox" id="slidepark" name="slidepark" value="Слайд-парк" checked>
+                  <label class="sightseen-form__input-label" for="slidepark">Слайд-парк</label>
+                </p>
+                <p class="sightseen-form__input">
+                  <input class="sightseen-form__field" type="checkbox" id="redrocks" name="redrocks" value="Красные скалы">
+                  <label class="sightseen-form__input-label" for="redrocks">Красные скалы</label>
+                </p>
+              </div>
             </div>
             <div class="feedback__form comments-form">
               <label class="comments-form__input-label" for="comments">Опишите свои эмоции:</label>
               <textarea class="comments-form__field" id="comments" name="commentsfield">Опишите подробно все свои восторги</textarea>
             </div>
-            <button class="feedback__button" type="submit" name="submit-button">Отправить отзыв</button>
-            <span class="feedback__obligatory-mark">* - обязательные поля</span>
+            <div class="feedback__flex-wrapper">
+              <button class="feedback__button" type="submit" name="submit-button">Отправить отзыв</button>
+              <span class="feedback__obligatory-mark">* - обязательные поля</span>
+            </div>
           </form>
         </section>
       </main>

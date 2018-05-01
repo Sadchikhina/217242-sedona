@@ -48,3 +48,33 @@
     background-repeat: no-repeat;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .sightseen-form {
+    width: 100%;
+    padding-top: 31px;
+
+    &__label {
+      font-size: 21px;
+      width: 270px;
+      margin: 0 auto;
+      margin-bottom: 39px;
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 458px;
+      margin: 0 auto;
+    }
+
+    &__input {
+      width: 200px;
+    }
+
+    &__input:not(:last-of-type) {
+      margin-bottom: 47px;
+    }
+  }
+}
