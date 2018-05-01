@@ -1,14 +1,52 @@
 .sightseen-form {
-  min-height: 409px;
+  width: 279px;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 25px;
 
   &__label {
     font-size: @title-size;
     font-weight: bold;
+    display: block;
+    text-align: center;
+    margin-bottom: 31px;
+  }
+
+  &__input:not(:last-of-type) {
+    margin-bottom: 54px;
+  }
+
+  &__field {
+    display: none;
   }
 
   &__input-label {
+    position: relative;
     font-size: @title-size;
     text-transform: none;
     font-weight: bold;
+    padding-left: 79px;
+  }
+
+  &__input-label::before {
+    content: "";
+    position: absolute;
+    top: -14px;
+    left: 0;
+    width: 55px;
+    height: 55px;
+    border-radius: 4px;
+    background-color: @grey-field;
+  }
+
+  &__field:checked + &__input-label::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 16px;
+    width: 23px;
+    height: 23px;
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
   }
 }
