@@ -1,10 +1,15 @@
 .video-list {
-  min-height: 459px;
   text-align: center;
+
+  &__item {
+    position: relative;
+    margin-bottom: 349px;
+  }
 
   &__title {
     font-size: @title-size;
     font-weight: bold;
+    margin-bottom: 27px;
   }
 
   &__wrapper {
@@ -12,6 +17,81 @@
     margin: 0 auto;
     font-size: @regular-size;
     line-height: @regular-line-height;
+    margin-bottom: 34px;
+  }
+
+  &__clip {
+    position: absolute;
+    left: 0;
+  }
+
+  &__player {
+    position: absolute;
+    top: 313px;
+    left: 20px;
+    width: 280px;
+    height: 45px;
+    background-color: @black;
+    opacity: 0.6;
+  }
+
+  &__line {
+    position: absolute;
+    bottom: 20px;
+    left: 22px;
+    width: 235px;
+    height: 2px;
+    background-color: @white;
+    opacity: 0.3;
+  }
+
+  &__handle {
+    position: absolute;
+    bottom: 16px;
+    left: 58px;
+    width: 9px;
+    height: 9px;
+    border-radius: 100%;
+    background-color: @white;
+  }
+
+  &__panel {
+    position: absolute;
+    top: 358px;
+    left: 20px;
+    width: 280px;
+    height: 67px;
+    background-color: @grey-field;
+  }
+
+  &__replay {
+    position: absolute;
+    top: 22px;
+    left: 25px;
+
+    svg {
+      fill: @grey-icons;
+    }
+  }
+
+  &__subtitles {
+    position: absolute;
+    top: 24px;
+    right: 75px;
+
+    svg {
+      fill: @grey-icons;
+    }
+  }
+
+  &__fullscreen {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+
+    svg {
+      fill: @grey-icons;
+    }
   }
 }
 
@@ -19,6 +99,13 @@
   .video-list {
     &__wrapper {
       width: 420px;
+    }
+
+    &__title {
+      font-size: 30px;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 31px;
     }
   }
 }

@@ -1,16 +1,19 @@
 .reasons {
 
   &__wrapper {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 260px;
-    height: 202px;
     margin: 0 auto;
+    padding-top: 28px;
+    padding-bottom: 12px;
   }
 
   &__title {
     font-size: @title-size;
     text-align: center;
+    padding-bottom: 2px;
   }
 
   &__intro {
@@ -23,7 +26,13 @@
   .reasons {
     &__wrapper {
       width: 500px;
-      height: 206px;
+      padding-top: 36px;
+      padding-bottom: 36px;
+    }
+
+    &__title {
+      font-size: 21px;
+      padding: 0;
     }
   }
 }
@@ -32,7 +41,6 @@
   .reasons {
     &__wrapper {
       width: 500px;
-      height: 206px;
     }
   }
 }

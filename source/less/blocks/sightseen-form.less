@@ -1,14 +1,102 @@
 .sightseen-form {
-  min-height: 409px;
+  padding: 0;
+  padding-top: 19px;
 
   &__label {
     font-size: @title-size;
     font-weight: bold;
+    display: block;
+    text-align: center;
+    margin-bottom: 31px;
+  }
+
+  &__input:not(:last-of-type) {
+    margin-bottom: 54px;
+  }
+
+  &__field {
+    display: none;
   }
 
   &__input-label {
+    position: relative;
     font-size: @title-size;
     text-transform: none;
     font-weight: bold;
+    padding-left: 79px;
+  }
+
+  &__input-label::before {
+    content: "";
+    position: absolute;
+    top: -14px;
+    left: 0;
+    width: 55px;
+    height: 55px;
+    border-radius: 4px;
+    background-color: @grey-field;
+  }
+
+  &__field:checked + &__input-label::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 16px;
+    width: 23px;
+    height: 23px;
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .sightseen-form {
+    width: 100%;
+    padding-top: 31px;
+
+    &__label {
+      font-size: 21px;
+      width: 270px;
+      margin: 0 auto;
+      margin-bottom: 39px;
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 458px;
+      margin: 0 auto;
+    }
+
+    &__input {
+      width: 200px;
+    }
+
+    &__input:not(:last-of-type) {
+      margin-bottom: 47px;
+    }
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .sightseen-form {
+    &__label {
+      padding-top: 23px;
+    }
+
+    &__wrapper {
+      width: 956px;
+      justify-content: space-between;
+      margin: 0 auto;
+    }
+
+    &__input:first-of-type {
+      margin-right: 20px;
+    }
+
+    &__input:nth-of-type(2) {
+      margin-right: 20px;
+    }
   }
 }

@@ -1,17 +1,41 @@
 .introduce-form {
-  min-height: 305px;
+  padding: 0;
+  padding-top: 1px;
 
   &__label {
     font-size: @title-size;
     font-weight: bold;
+    display: block;
+    text-align: center;
+    margin-bottom: 23px;
+  }
+
+  &__input {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 23px;
   }
 
   &__field {
+    height: 54px;
     font-size: @title-size;
     font-weight: bold;
-    padding-left: 22px;
+    padding-left: 21px;
     background-color: @grey-field;
     border: none;
+  }
+
+  &__field--name {
+    width: 229px;
+  }
+
+  &__field--surname {
+    width: 190px;
+  }
+
+  &__field--patronymic {
+    width: 192px;
   }
 
   &__input-label {
@@ -21,12 +45,62 @@
 
 @media (min-width: @tablet-width) {
   .introduce-form {
-    width: 50%;
+    padding-top: 0;
+    width: 265px;
+
+    &__label {
+      font-size: 21px;
+      text-align: left;
+      margin-bottom: 58px;
+    }
+
+    &__input {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 24px;
+    }
+
+    &__field--name {
+      width: 215px;
+    }
+
+    &__field--surname {
+      width: 177px;
+    }
+
+    &__field--patronymic {
+      width: 179px;
+    }
   }
 }
 
 @media (min-width: @desctop-width) {
   .introduce-form {
     width: 50%;
+    padding-left: 80px;
+
+    &__label {
+      margin-bottom: 56px;
+    }
+
+    &__input {
+      margin-bottom: 20px;
+    }
+
+    &__field {
+      height: 58px;
+    }
+
+    &__field--name {
+      width: 350px;
+    }
+
+    &__field--surname {
+      width: 311px;
+    }
+
+    &__field--patronymic {
+      width: 315px;
+    }
   }
 }
