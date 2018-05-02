@@ -1,9 +1,9 @@
 .video-list {
   text-align: center;
+  margin-bottom: 349px;
 
   &__item {
     position: relative;
-    margin-bottom: 349px;
   }
 
   &__title {
@@ -21,6 +21,8 @@
   }
 
   &__clip {
+    max-width: 100%;
+    height: auto;
     position: absolute;
     left: 0;
   }
@@ -114,6 +116,10 @@
   .video-list {
     &__wrapper {
       width: 420px;
+    }
+
+    &__clip {
+      left: 250px;
     }
   }
 }

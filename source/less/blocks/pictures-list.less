@@ -52,7 +52,7 @@
   .pictures-list {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 22px;
+    margin-bottom: 67px;
 
     &__item {
       display: flex;
@@ -87,6 +87,7 @@
     &__wrapper {
       display: flex;
       justify-content: space-between;
+      padding-bottom: 11px;
     }
 
     &__item--bg-grey {
@@ -101,9 +102,19 @@
     flex-wrap: wrap;
 
     &__item {
+      position: relative;
       width: 33.3%;
       color: @white;
       border-bottom: none;
+    }
+
+    &__img {
+      margin: 0;
+    }
+
+    &__wrapper {
+      position: absolute;
+      bottom: 0;
     }
 
     &__likes {
