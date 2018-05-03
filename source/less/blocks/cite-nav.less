@@ -10,12 +10,6 @@
     padding-bottom: 7px;
     border-bottom: 1px solid @dark-blue;
     border-top: 1px solid @light-blue;
-  }
-
-  &__item:last-child {
-    border-bottom: none;
-    box-shadow: inset 0 -2px 7px -1px @dark-blue;
-  }
 
     a {
       color: @white;
@@ -24,6 +18,14 @@
       font-weight: bold;
       text-decoration: none;
     }
+  }
+
+  &__item:last-child {
+    border-bottom: none;
+    box-shadow: inset 0 -2px 7px -1px @dark-blue;
+  }
+
+
   }
 
 @media (min-width: @tablet-width) {
@@ -53,6 +55,30 @@
       a {
         font-size: @regular-size;
         color: @black;
+      }
+
+      a:hover {
+        color: @blue;
+      }
+
+      a:active {
+        color: @grey-links-down;
+      }
+    }
+
+    &__item--active {
+      cursor: pointer;
+
+      a {
+        color: @brown;
+      }
+
+      a:hover {
+        color: @dark-brown;
+      }
+
+      a:active {
+        color: @light-brown;
       }
     }
   }
