@@ -163,7 +163,7 @@
       line-height: 26px;
     }
 
-    &__img--bridge {
+    &__pic--bridge {
       order: -1;
     }
 
@@ -232,6 +232,7 @@
 
     &:nth-child(3) {
       order: 4;
+      width: 33.4%;
     }
 
     &:nth-child(4) {
@@ -252,6 +253,7 @@
 
     &:last-child {
       order: 8;
+      width: 33.4%;
     }
 
     &--bg-grey {
@@ -285,6 +287,12 @@
       padding-top: 51px;
     }
 
+    &__img {
+      position: absolute;
+      width: 799px;
+      height: auto;
+    }
+
     &__add-info-wrapper {
       width: 300px;
       margin-right: 58px;
@@ -313,9 +321,8 @@
     }
 
     &--bg-blue {
+      position: relative;
       background-color: @blue;
-      display: flex;
-      width: 100%;
     }
 
     &--add-info {
