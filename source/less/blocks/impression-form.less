@@ -68,13 +68,9 @@
     order: -1;
 
     &::after {
-      content: "";
-      position: absolute;
       bottom: -47px;
       left: 0;
       width: 125px;
-      height: 1px;
-      background-color: @grey-border;
     }
 
     &::before {
@@ -108,6 +104,11 @@
   .impression-form {
     width: 50%;
     margin-right: 0;
+
+    &::after {
+      bottom: -46px;
+      width: 279px;
+    }
 
     &__label {
       text-align: center;
