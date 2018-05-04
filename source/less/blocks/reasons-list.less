@@ -117,12 +117,33 @@
   }
 
   &--bg-grey {
+    position: relative;
     text-align: center;
     background-color: @grey;
     padding-top: 35px;
     padding-left: 35px;
     padding-right: 35px;
     padding-bottom: 15px;
+  }
+
+  &--bg-grey:nth-child(7)::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 20px;
+    width: 282px;
+    height: 1px;
+    background-color: @grey-main-decor;
+  }
+
+  &--bg-grey:nth-child(7)::after {
+    content: "";
+    position: absolute;
+    bottom: 1px;
+    left: 20px;
+    width: 282px;
+    height: 1px;
+    background-color: @grey-main-decor;
   }
 
   &--add-info {

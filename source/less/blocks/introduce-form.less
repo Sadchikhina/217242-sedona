@@ -1,24 +1,35 @@
 .introduce-form {
+  position: relative;
   padding: 0;
   padding-top: 1px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -26px;
+    left: -21px;
+    width: 320px;
+    height: 1px;
+    background-color: @grey-border;
+  }
 
   &__label {
     font-size: @title-size;
     font-weight: bold;
     display: block;
     text-align: center;
-    margin-bottom: 23px;
+    margin-bottom: 21px;
   }
 
   &__input {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin-bottom: 23px;
+    margin-bottom: 20px;
   }
 
   &__field {
-    height: 54px;
+    height: 58px;
     font-size: @title-size;
     font-weight: bold;
     padding-left: 21px;
@@ -27,15 +38,15 @@
   }
 
   &__field--name {
-    width: 229px;
+    width: 230px;
   }
 
   &__field--surname {
-    width: 190px;
+    width: 191px;
   }
 
   &__field--patronymic {
-    width: 192px;
+    width: 193px;
   }
 
   &__input-label {

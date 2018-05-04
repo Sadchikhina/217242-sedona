@@ -1,6 +1,17 @@
 .impression-form {
+  position: relative;
   padding: 0;
-  padding-top: 32px;
+  padding-top: 35px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -44px;
+    left: -21px;
+    width: 320px;
+    height: 1px;
+    background-color: @grey-border;
+  }
 
   &__label {
     font-size: @title-size;

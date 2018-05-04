@@ -1,6 +1,17 @@
 .sightseen-form {
+  position: relative;
   padding: 0;
   padding-top: 19px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -42px;
+    left: -21px;
+    width: 320px;
+    height: 1px;
+    background-color: @grey-border;
+  }
 
   &__label {
     font-size: @title-size;
