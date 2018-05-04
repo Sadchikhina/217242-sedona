@@ -35,6 +35,17 @@
     padding-left: 21px;
     background-color: @grey-field;
     border: none;
+    outline: none;
+  }
+
+  &__field:hover {
+    background-color: @grey-border;
+  }
+
+  &__field:active,
+  &__field:focus {
+    background-color: @white;
+    outline: 4px solid @grey-main-decor;
   }
 
   &__field--name {

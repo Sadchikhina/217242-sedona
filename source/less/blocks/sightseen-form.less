@@ -48,6 +48,14 @@
     background-color: @grey-field;
   }
 
+  &__input-label:hover::before {
+    background-color: @grey-border;
+  }
+
+  &__input-label:active::before {
+    background-color: @grey-main-decor;
+  }
+
   &__field:checked + &__input-label::after {
     content: "";
     position: absolute;
@@ -57,6 +65,10 @@
     height: 23px;
     background-image: url("../img/icon-tick.svg");
     background-repeat: no-repeat;
+  }
+
+  &__field:checked + &__input-label:active::after {
+    opacity: 0.3;
   }
 }
 

@@ -37,6 +37,14 @@
     padding-left: 79px;
   }
 
+  &__input-label:hover::before {
+    background-color: @grey-border;
+  }
+
+  &__input-label:active::before {
+    background-color: @grey-main-decor;
+  }
+
   &__input-label::before {
     content: "";
     position: absolute;
@@ -57,6 +65,10 @@
     height: 21px;
     border-radius: 100%;
     background-color: @black;
+  }
+
+  &__field:checked + &__input-label:active::after {
+    opacity: 0.3;
   }
 }
 
