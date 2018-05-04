@@ -63,10 +63,29 @@
 @media (min-width: @tablet-width) {
   .impression-form {
     padding-top: 0;
-    padding-right: 52px;
+    padding-right: 51px;
     margin-right: 58px;
-    border-right: 1px solid @grey-border;
     order: -1;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -47px;
+      left: 0;
+      width: 125px;
+      height: 1px;
+      background-color: @grey-border;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      right: -1px;
+      width: 1px;
+      height: 293px;
+      background-color: @grey-border;
+    }
 
     &__label {
       font-size: 21px;

@@ -24,12 +24,33 @@
 
 @media (min-width: @tablet-width) {
   .comments-form {
+    position: relative;
     width: 100%;
-    padding-top: 36px;
+    padding-top: 37px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 49px;
+      left: 0;
+      width: 125px;
+      height: 1px;
+      background-color: @grey-border;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 49px;
+      right: 0;
+      width: 125px;
+      height: 1px;
+      background-color: @grey-border;
+    }
 
     &__input-label {
       font-size: 21px;
-      margin-bottom: 59px;
+      margin-bottom: 58px;
     }
 
     &__field {

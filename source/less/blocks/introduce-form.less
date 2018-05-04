@@ -59,6 +59,16 @@
     padding-top: 0;
     width: 265px;
 
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -47px;
+      left: 143px;
+      width: 124px;
+      height: 1px;
+      background-color: @grey-border;
+    }
+
     &__label {
       font-size: 21px;
       text-align: left;
@@ -68,7 +78,7 @@
     &__input {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 24px;
+      margin-bottom: 20px;
     }
 
     &__input-label {

@@ -63,7 +63,27 @@
 @media (min-width: @tablet-width) {
   .sightseen-form {
     width: 100%;
-    padding-top: 31px;
+    padding-top: 29px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 54px;
+      left: 0;
+      width: 125px;
+      height: 1px;
+      background-color: @grey-border;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 54px;
+      right: 0;
+      width: 125px;
+      height: 1px;
+      background-color: @grey-border;
+    }
 
     &__label {
       font-size: 21px;
