@@ -1,6 +1,17 @@
 .sightseen-form {
+  position: relative;
   padding: 0;
   padding-top: 19px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -42px;
+    left: -21px;
+    width: 320px;
+    height: 1px;
+    background-color: @grey-border;
+  }
 
   &__label {
     font-size: @title-size;
@@ -37,6 +48,14 @@
     background-color: @grey-field;
   }
 
+  &__input-label:hover::before {
+    background-color: @grey-border;
+  }
+
+  &__input-label:active::before {
+    background-color: @grey-main-decor;
+  }
+
   &__field:checked + &__input-label::after {
     content: "";
     position: absolute;
@@ -47,12 +66,36 @@
     background-image: url("../img/icon-tick.svg");
     background-repeat: no-repeat;
   }
+
+  &__field:checked + &__input-label:active::after {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .sightseen-form {
     width: 100%;
-    padding-top: 31px;
+    padding-top: 29px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 54px;
+      left: 0;
+      width: 125px;
+      height: 1px;
+      background-color: @grey-border;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 54px;
+      right: 0;
+      width: 125px;
+      height: 1px;
+      background-color: @grey-border;
+    }
 
     &__label {
       font-size: 21px;
@@ -76,13 +119,27 @@
     &__input:not(:last-of-type) {
       margin-bottom: 47px;
     }
+
+    &__input-label {
+      cursor: pointer;
+    }
   }
 }
 
 @media (min-width: @desctop-width) {
   .sightseen-form {
+    &::after {
+      top: 78px;
+      width: 279px;
+    }
+
+    &::before {
+      top: 78px;
+      width: 279px;
+    }
+
     &__label {
-      padding-top: 23px;
+      padding-top: 24px;
     }
 
     &__wrapper {

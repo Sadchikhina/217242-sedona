@@ -1,12 +1,23 @@
 .form {
-  max-width: 279px;
+  max-width: 282px;
   margin: 0 auto;
-  margin-bottom: 74px;
+  margin-bottom: 25px;
 
   &__wrapper {
+    position: relative;
     text-align: center;
     padding-bottom: 3px;
     margin-bottom: 18px;
+  }
+
+  &__wrapper::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: -21px;
+    width: 320px;
+    height: 1px;
+    background-color: @grey-border;
   }
 
   &__title {
@@ -24,13 +35,17 @@
   .form {
     max-width: 648px;
     margin: 0 auto;
-    margin-bottom: 80px;
+    margin-bottom: 23px;
 
     &__wrapper {
       width: 440px;
       margin: 0 auto;
       padding-top: 15px;
       margin-bottom: 56px;
+    }
+
+    &__wrapper::after {
+      display: none;
     }
 
     &__title {
@@ -44,7 +59,7 @@
   .form {
     max-width: 960px;
     margin: 0 auto;
-    margin-bottom: 84px;
+    margin-bottom: 19px;
 
     &__wrapper {
       border-bottom: none;

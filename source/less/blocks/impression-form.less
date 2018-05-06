@@ -1,6 +1,17 @@
 .impression-form {
+  position: relative;
   padding: 0;
-  padding-top: 32px;
+  padding-top: 35px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -44px;
+    left: -21px;
+    width: 320px;
+    height: 1px;
+    background-color: @grey-border;
+  }
 
   &__label {
     font-size: @title-size;
@@ -26,6 +37,14 @@
     padding-left: 79px;
   }
 
+  &__input-label:hover::before {
+    background-color: @grey-border;
+  }
+
+  &__input-label:active::before {
+    background-color: @grey-main-decor;
+  }
+
   &__input-label::before {
     content: "";
     position: absolute;
@@ -47,15 +66,34 @@
     border-radius: 100%;
     background-color: @black;
   }
+
+  &__field:checked + &__input-label:active::after {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .impression-form {
     padding-top: 0;
-    padding-right: 52px;
+    padding-right: 51px;
     margin-right: 58px;
-    border-right: 1px solid @grey-border;
     order: -1;
+
+    &::after {
+      bottom: -47px;
+      left: 0;
+      width: 125px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      right: -1px;
+      width: 1px;
+      height: 293px;
+      background-color: @grey-border;
+    }
 
     &__label {
       font-size: 21px;
@@ -69,6 +107,7 @@
 
     &__input-label {
       padding-left: 77px;
+      cursor: pointer;
     }
   }
 }
@@ -77,6 +116,11 @@
   .impression-form {
     width: 50%;
     margin-right: 0;
+
+    &::after {
+      bottom: -46px;
+      width: 279px;
+    }
 
     &__label {
       text-align: center;

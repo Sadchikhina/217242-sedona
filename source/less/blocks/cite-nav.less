@@ -10,12 +10,6 @@
     padding-bottom: 7px;
     border-bottom: 1px solid @dark-blue;
     border-top: 1px solid @light-blue;
-  }
-
-  &__item:last-child {
-    border-bottom: none;
-    box-shadow: inset 0 -2px 7px -1px @dark-blue;
-  }
 
     a {
       color: @white;
@@ -25,6 +19,24 @@
       text-decoration: none;
     }
   }
+
+  &__item:hover {
+    background-color: @blue-hover;
+  }
+
+  &__item:active {
+    background-color: @blue-down;
+
+    a {
+      color: @blue-text;
+    }
+  }
+
+  &__item:last-child {
+    border-bottom: none;
+    box-shadow: inset 0 -2px 7px -1px @dark-blue;
+  }
+}
 
 @media (min-width: @tablet-width) {
   .cite-nav {
@@ -53,6 +65,34 @@
       a {
         font-size: @regular-size;
         color: @black;
+      }
+
+      &:hover {
+        background-color: @white;
+
+        a {
+          color: @blue;
+        }
+      }
+
+      &:active a {
+        color: @grey-links-down;
+      }
+    }
+
+    &__item--active {
+      cursor: pointer;
+
+      a {
+        color: @brown;
+      }
+
+      &:hover a {
+        color: @dark-brown;
+      }
+
+      &:active a {
+        color: @light-brown;
       }
     }
   }

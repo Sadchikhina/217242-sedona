@@ -1,41 +1,63 @@
 .introduce-form {
+  position: relative;
   padding: 0;
   padding-top: 1px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -26px;
+    left: -21px;
+    width: 320px;
+    height: 1px;
+    background-color: @grey-border;
+  }
 
   &__label {
     font-size: @title-size;
     font-weight: bold;
     display: block;
     text-align: center;
-    margin-bottom: 23px;
+    margin-bottom: 21px;
   }
 
   &__input {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin-bottom: 23px;
+    margin-bottom: 20px;
   }
 
   &__field {
-    height: 54px;
+    height: 58px;
     font-size: @title-size;
     font-weight: bold;
     padding-left: 21px;
     background-color: @grey-field;
     border: none;
+    outline: none;
+  }
+
+  &__field:hover {
+    background-color: @grey-border;
+  }
+
+  &__field:active,
+  &__field:focus {
+    background-color: @white;
+    outline: 4px solid @grey-main-decor;
   }
 
   &__field--name {
-    width: 229px;
+    width: 230px;
   }
 
   &__field--surname {
-    width: 190px;
+    width: 191px;
   }
 
   &__field--patronymic {
-    width: 192px;
+    width: 193px;
   }
 
   &__input-label {
@@ -48,6 +70,12 @@
     padding-top: 0;
     width: 265px;
 
+    &::after {
+      bottom: -47px;
+      left: 143px;
+      width: 124px;
+    }
+
     &__label {
       font-size: 21px;
       text-align: left;
@@ -57,7 +85,11 @@
     &__input {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 24px;
+      margin-bottom: 20px;
+    }
+
+    &__input-label {
+      cursor: pointer;
     }
 
     &__field--name {
@@ -78,6 +110,12 @@
   .introduce-form {
     width: 50%;
     padding-left: 80px;
+
+    &::after {
+      bottom: -46px;
+      left: 200px;
+      width: 279px;
+    }
 
     &__label {
       margin-bottom: 56px;

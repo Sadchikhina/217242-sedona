@@ -19,17 +19,49 @@
     padding-left: 20px;
     background-color: @grey-field;
     border: none;
+    outline: none;
+  }
+
+  &__field:hover {
+    background-color: @grey-border;
+  }
+
+  &__field:active,
+  &__field:focus {
+    background-color: @white;
+    outline: 4px solid @grey-main-decor;
   }
 }
 
 @media (min-width: @tablet-width) {
   .comments-form {
+    position: relative;
     width: 100%;
-    padding-top: 36px;
+    padding-top: 37px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 49px;
+      left: 0;
+      width: 125px;
+      height: 1px;
+      background-color: @grey-border;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 49px;
+      right: 0;
+      width: 125px;
+      height: 1px;
+      background-color: @grey-border;
+    }
 
     &__input-label {
       font-size: 21px;
-      margin-bottom: 59px;
+      margin-bottom: 58px;
     }
 
     &__field {
@@ -40,6 +72,17 @@
 
 @media (min-width: @desctop-width) {
   .comments-form {
+    padding-top: 36px;
+
+    &::after {
+      top: 48px;
+      width: 279px;
+    }
+
+    &::before {
+      top: 48px;
+      width: 279px;
+    }
 
     &__field {
       width: 100%;

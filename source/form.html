@@ -18,7 +18,12 @@
             <li class="cite-nav__item  cite-nav__item--active"><a>ФОРМА ОТЗЫВА</a></li>
             <li class="cite-nav__item"><a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML ACADEMY</a></li>
           </ul>
-          <a class="main-nav__logo"><img class="page-header__logo-img" src="img/logo-sedona-mobile.svg" width="" height="" alt="логотип"></a>
+          <a class="main-nav__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img class="page-header__logo-img" src="img/logo-sedona-mobile.svg" width="101.668px" height="83.984px" alt="логотип">
+          </picture></a>
           <button class="main-nav__open-button" type="button"></button>
           <button class="main-nav__close-button visually-hidden" type="button"></button>
         </nav>
@@ -50,12 +55,12 @@
             </div>
             <div class="feedback__form contacts-form">
               <label class="contacts-form__label">Контактная информация:</label>
-              <p class="contacts-form__input">
+              <p class="contacts-form__input contacts-form__input--phone">
                 <label class="contacts-form__input-label" for="phone"><span class="contacts-form__invis-desctop">Контактный </span>телефон*:</label>
                 <input class="contacts-form__field" type="tel" id="phone" name="yourphone" pattern="[0-9]{1}[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}" placeholder="Введите телефон" autocomplete="on" required>
               </p>
-              <p class="contacts-form__input">
-                <label class="contacts-form__input-label" for="phone">Электронная почта*:</label>
+              <p class="contacts-form__input contacts-form__input--email">
+                <label class="contacts-form__input-label" for="email">Электронная почта*:</label>
                 <input class="contacts-form__field" type="email" id="email" name="youremail" placeholder="Введите e-mail" autocomplete="on" required>
               </p>
             </div>
@@ -100,7 +105,7 @@
               <textarea class="comments-form__field" id="comments" name="commentsfield">Опишите подробно все свои восторги</textarea>
             </div>
             <div class="feedback__flex-wrapper">
-              <button class="feedback__button" type="submit" name="submit-button">Отправить отзыв</button>
+              <button class="feedback__button blue-button" type="submit" name="submit-button">Отправить отзыв</button>
               <span class="feedback__obligatory-mark">* - обязательные поля</span>
             </div>
           </form>

@@ -1,6 +1,7 @@
 .page-main {
+  background-color: @white;
   width: 100%;
-  margin-bottom: 49px;
+  padding-bottom: 49px;
 }
 
 .page-main__header {
@@ -14,6 +15,7 @@
     height: 389px;
     padding-top: 90px;
     text-align: center;
+    overflow: hidden;
   }
 
   &--index::before {
@@ -32,8 +34,9 @@
     position: relative;
     height: 158px;
     padding-top: 52px;
-    text-align: center;
     margin-bottom: 39px;
+    text-align: center;
+    overflow: hidden;
   }
 
   &--inner::before {
@@ -47,11 +50,22 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+}
 
+@media (min-resolution: 1.5dppx) {
+  .page-main__header {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
 }
 
 @media (min-width: @tablet-width) {
+  .page-main {
+    padding-bottom: 58px;
+  }
+
   .page-main__header {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+
     &--index {
       height: 518px;
       padding-top: 77px;
@@ -67,22 +81,10 @@
       content: "";
       position: absolute;
       bottom: 0;
-      left: 29px;
-      width: 92.5%;
+      left: 0;
+      width: 768px;
       height: 57px;
-      background-image: url("../img/bg-intro-triangle-mobile.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
-    &--index::after {
-      content: "";
-      position: absolute;
-      bottom: -10px;
-      left: -15px;
-      width: 105%;
-      height: 50px;
-      background-image: url("../img/bg-intro-triangle-mobile.svg");
+      background-image: url("../img/bg-intro-triangle-tablet.svg");
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -102,30 +104,30 @@
       content: "";
       position: absolute;
       bottom: 0;
-      left: 29px;
-      width: 92.5%;
+      left: 0;
+      width: 768px;
       height: 57px;
-      background-image: url("../img/bg-intro-triangle-mobile.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
-    &--inner::after {
-      content: "";
-      position: absolute;
-      bottom: -10px;
-      left: -15px;
-      width: 105%;
-      height: 50px;
-      background-image: url("../img/bg-intro-triangle-mobile.svg");
+      background-image: url("../img/bg-intro-triangle-tablet.svg");
       background-repeat: no-repeat;
       background-size: cover;
     }
   }
 }
 
-@media (min-width: @desctop-width) {
+@media (min-resolution: 1.5dppx) {
   .page-main__header {
+    background-image: url("../img/bg-back-tablet@2x.jpg");
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .page-main {
+    padding-bottom: 66px;
+  }
+
+  .page-main__header {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+
     &--index {
       height: 518px;
       padding-top: 77px;
@@ -141,26 +143,12 @@
       content: "";
       position: absolute;
       bottom: 0;
-      left: -4px;
-      width: 100%;
-      height: 60px;
-      background-image: url("../img/bg-intro-triangle-mobile.svg");
+      left: 0;
+      width: 1200px;
+      height: 57px;
+      background-image: url("../img/bg-intro-triangle-desktop.svg");
       background-repeat: no-repeat;
       background-size: cover;
-      display: none;
-    }
-
-    &--index::after {
-      content: "";
-      position: absolute;
-      bottom: -10px;
-      left: -15px;
-      width: 110%;
-      height: 50px;
-      background-image: url("../img/bg-intro-triangle-mobile.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      display: none;
     }
 
     &--inner {
@@ -179,26 +167,18 @@
       content: "";
       position: absolute;
       bottom: 0;
-      left: -4px;
-      width: 100%;
-      height: 60px;
-      background-image: url("../img/bg-intro-triangle-mobile.svg");
+      left: 0;
+      width: 1200px;
+      height: 57px;
+      background-image: url("../img/bg-intro-triangle-desktop.svg");
       background-repeat: no-repeat;
       background-size: cover;
-      display: none;
     }
+  }
+}
 
-    &--inner::after {
-      content: "";
-      position: absolute;
-      bottom: -10px;
-      left: -15px;
-      width: 110%;
-      height: 50px;
-      background-image: url("../img/bg-intro-triangle-mobile.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      display: none;
-    }
+@media (min-resolution: 1.5dppx) {
+  .page-main__header {
+    background-image: url("../img/bg-back-desktop@2x.jpg");
   }
 }
