@@ -50,12 +50,12 @@ gulp.task("images", function () {
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true}),
       imagemin.svgo()
-     ]))
-     .pipe(gulp.dest("build/img"));
- });
+      ]))
+      .pipe(gulp.dest("build/img"));
+});
 
 gulp.task("webp", function () {
- return gulp.src("source/img/**/*.{png,jpg}")
+  return gulp.src("source/img/**/*.{png,jpg}")
    .pipe(webp({quality: 90}))
    .pipe(gulp.dest("build/img"));
 });
@@ -88,7 +88,7 @@ gulp.task("copy", function () {
   ], {
     base: "source"
   })
- .pipe(gulp.dest("build"));
+  .pipe(gulp.dest("build"));
 });
 
 gulp.task("build", function(done) {
