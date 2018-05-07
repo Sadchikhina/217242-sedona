@@ -86,7 +86,7 @@
               <picture class="reasons-list__pic reasons-list__pic--bridge columns__item-66">
                 <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.webp 1x, img/main-bridge-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.webp 1x, img/main-bridge-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/main-bridge-mobile.webp 1x, img/main-bridge-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="img/main-bridge-mobile@1x.webp 1x, img/main-bridge-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
                 <img class="reasons-list__img" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="мост дьявола">
@@ -127,15 +127,7 @@
       <footer class="page-footer">
         <section class="map">
           <h4 class="visually-hidden">Карта</h4>
-          <picture>
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/bg-map-mobile.webp 1x, img/bg-map-mobile@2x.webp 2x">
-            <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
-            <img class="map__img" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="карта">
-          </picture>
-          <img class="map__marker" src="img/icon-map-marker.svg" width="27" height="27" alt="мы здесь">
+          <iframe class="map__interactive" src="https://yandex.ru/map-widget/v1/?um=constructor%3Adcd6e585a12f41aaac4c40957dfa1e3b2fd66de24d56c6d2ebc2cfeb251f348c&amp;source=constructor"></iframe>
         </section>
         <section class="contacts">
           <h4 class="visually-hidden">Контакты в социальных сетях</h4>

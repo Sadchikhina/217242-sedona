@@ -2,16 +2,13 @@
   position: relative;
   padding-bottom: 385px;
 
-  &__img {
+  &__interactive {
     position: absolute;
-    max-width: 100%;
-    height: auto;
-  }
-
-  &__marker {
-    position: absolute;
-    top: 160px;
-    left: 146px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 350px;
+    border: none;
   }
 }
 
@@ -19,19 +16,5 @@
   .map {
     margin-bottom: 12px;
     padding-bottom: 357px;
-
-    &__marker {
-      top: 164px;
-      left: 368px;
-    }
-  }
-}
-
-@media (min-width: @desctop-width) {
-  .map {
-    &__marker {
-      top: 162px;
-      left: 586px;
-    }
   }
 }
