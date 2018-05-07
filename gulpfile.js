@@ -13,7 +13,7 @@ var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
-var run = require('run-sequence');
+var run = require("run-sequence");
 var htmlmin = require("gulp-htmlmin");
 var server = require("browser-sync").create();
 
