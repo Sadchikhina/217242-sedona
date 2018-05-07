@@ -14,6 +14,7 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 var run = require('run-sequence');
+var htmlmin = require("gulp-htmlmin");
 var server = require("browser-sync").create();
 
 gulp.task("style", function() {
@@ -23,7 +24,7 @@ gulp.task("style", function() {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
@@ -32,7 +33,7 @@ gulp.task("style", function() {
 
 gulp.task("serve", ["style"], function() {
   server.init({
-    server: "source/",
+    server: "build/",
     notify: false,
     open: true,
     cors: true,
@@ -50,27 +51,22 @@ gulp.task("images", function () {
       imagemin.jpegtran({progressive: true}),
       imagemin.svgo()
      ]))
-     .pipe(gulp.dest("source/img"));
+     .pipe(gulp.dest("build/img"));
  });
 
 gulp.task("webp", function () {
  return gulp.src("source/img/**/*.{png,jpg}")
    .pipe(webp({quality: 90}))
-   .pipe(gulp.dest("source/img"));
+   .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("html", function () {
   return gulp.src("source/*.html")
-    .pipe(gulp.dest("source"));
-    .pipe(posthtml())
-});
-
-gulp.task("html", function () {
- return gulp.src("source/*.html")
-   .pipe(posthtml([
-     include()
-   ]))
-   .pipe(gulp.dest("source"));
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(posthtml([
+      include()
+    ]))
+    .pipe(gulp.dest("build"));
 });
 
 gulp.task("sprite", function () {
@@ -79,7 +75,7 @@ gulp.task("sprite", function () {
       inlineSvg: true
      }))
       .pipe(rename("sprite.svg"))
-      .pipe(gulp.dest("source/img"));
+      .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("clean", function () {
@@ -89,8 +85,6 @@ gulp.task("clean", function () {
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",
-    "source/js/**"
   ], {
     base: "source"
   })
@@ -99,14 +93,13 @@ gulp.task("copy", function () {
 
 gulp.task("build", function(done) {
   run(
-    "style",
-    "serve",
-    "images",
-    "webp",
-    "html",
-    "sprite",
     "clean",
     "copy",
+    "style",
+    "images",
+    "webp",
+    "sprite",
+    "html",
     done
   );
 });
