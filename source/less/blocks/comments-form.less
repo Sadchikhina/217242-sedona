@@ -21,43 +21,45 @@
   background-color: @grey-field;
   border: none;
   outline: none;
+
+  &:hover {
+    background-color: @grey-border;
+  }
+
+  &:active,
+  &:focus {
+    background-color: @white;
+    outline: 4px solid @grey-main-decor;
+  }
 }
 
-.comments-form__field:hover {
-  background-color: @grey-border;
-}
 
-.comments-form__field:active,
-.comments-form__field:focus {
-  background-color: @white;
-  outline: 4px solid @grey-main-decor;
-}
 
 @media (min-width: @tablet-width) {
   .comments-form {
     position: relative;
     width: 100%;
     padding-top: 37px;
-  }
 
-  .comments-form::after {
-    content: "";
-    position: absolute;
-    top: 49px;
-    left: 0;
-    width: 125px;
-    height: 1px;
-    background-color: @grey-border;
-  }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 49px;
+      left: 0;
+      width: 125px;
+      height: 1px;
+      background-color: @grey-border;
+    }
 
-  .comments-form::before {
-    content: "";
-    position: absolute;
-    top: 49px;
-    right: 0;
-    width: 125px;
-    height: 1px;
-    background-color: @grey-border;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 49px;
+      right: 0;
+      width: 125px;
+      height: 1px;
+      background-color: @grey-border;
+    }
   }
 
   .comments-form__input-label {
@@ -73,16 +75,16 @@
 @media (min-width: @desctop-width) {
   .comments-form {
     padding-top: 36px;
-  }
 
-  .comments-form::after {
-    top: 48px;
-    width: 279px;
-  }
+    &::after {
+      top: 48px;
+      width: 279px;
+    }
 
-  .comments-form::before {
-    top: 48px;
-    width: 279px;
+    &::before {
+      top: 48px;
+      width: 279px;
+    }
   }
 
   .comments-form__field {

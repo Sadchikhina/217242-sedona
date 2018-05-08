@@ -19,23 +19,23 @@
     font-weight: bold;
     text-decoration: none;
   }
-}
 
-.cite-nav__item:hover {
-  background-color: @blue-hover;
-}
-
-.cite-nav__item:active {
-  background-color: @blue-down;
-
-  a {
-    color: @blue-text;
+  &:hover {
+    background-color: @blue-hover;
   }
-}
 
-.cite-nav__item:last-child {
-  border-bottom: none;
-  box-shadow: inset 0 -2px 7px -1px @dark-blue;
+  &:active {
+    background-color: @blue-down;
+
+    a {
+      color: @blue-text;
+    }
+  }
+
+  &:last-child {
+    border-bottom: none;
+    box-shadow: inset 0 -2px 7px -1px @dark-blue;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -43,18 +43,10 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     background-color: @white;
     padding-top: 8px;
     padding-left: 1px;
-  }
-
-  .cite-nav__item:last-child {
-    box-shadow: none;
-    margin-right: 0;
-  }
-
-  .cite-nav__item:nth-child(2) {
-    margin-right: 210px;
   }
 
   .cite-nav__item {
@@ -67,18 +59,27 @@
       font-size: @regular-size;
       color: @black;
     }
-  }
 
-  .cite-nav__item:hover {
-    background-color: @white;
-
-    a {
-      color: @blue;
+    &:last-child {
+      box-shadow: none;
+      margin-right: 0;
     }
-  }
 
-  .cite-nav__item:active a {
-    color: @grey-links-down;
+    &:nth-child(2) {
+      margin-right: 210px;
+    }
+
+    &:hover {
+      background-color: @white;
+
+      a {
+        color: @blue;
+      }
+    }
+
+    &:active a {
+      color: @grey-links-down;
+    }
   }
 
   .cite-nav__item--active {
@@ -87,14 +88,14 @@
     a {
       color: @brown;
     }
-  }
 
-  .cite-nav__item--active:hover a {
-    color: @dark-brown;
-  }
+    &:hover a {
+      color: @dark-brown;
+    }
 
-  .cite-nav__item--active:active a {
-    color: @light-brown;
+    &:active a {
+      color: @light-brown;
+    }
   }
 }
 

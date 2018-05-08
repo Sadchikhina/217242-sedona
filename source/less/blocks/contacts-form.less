@@ -2,16 +2,16 @@
   position: relative;
   padding: 0;
   padding-top: 24px;
-}
 
-.contacts-form::after {
-  content: "";
-  position: absolute;
-  bottom: -30px;
-  left: -21px;
-  width: 320px;
-  height: 1px;
-  background-color: @grey-border;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: -21px;
+    width: 320px;
+    height: 1px;
+    background-color: @grey-border;
+  }
 }
 
 .contacts-form__label {
@@ -27,6 +27,32 @@
   padding: 0;
   margin: 0;
   margin-bottom: 13px;
+
+  &--phone::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 58px;
+    height: 58px;
+    background-color: @grey-border;
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--email::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 58px;
+    height: 58px;
+    background-color: @grey-border;
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .contacts-form__input-label {
@@ -45,52 +71,28 @@
   background-color: @grey-field;
   border: none;
   outline: none;
+
+  &:hover {
+    background-color: @grey-border;
+  }
+
+  &:active,
+  &:focus {
+    background-color: @white;
+    outline: 4px solid @grey-main-decor;
+  }
 }
 
-.contacts-form__field:hover {
-  background-color: @grey-border;
-}
 
-.contacts-form__field:active,
-.contacts-form__field:focus {
-  background-color: @white;
-  outline: 4px solid @grey-main-decor;
-}
-
-.contacts-form__input--phone::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 58px;
-  height: 58px;
-  background-color: @grey-border;
-  background-image: url("../img/icon-phone.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.contacts-form__input--email::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 58px;
-  height: 58px;
-  background-color: @grey-border;
-  background-image: url("../img/icon-mail.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
 
 @media (min-width: @tablet-width) {
   .contacts-form {
     width: 100%;
     padding-top: 33px;
-  }
 
-  .contacts-form::after {
-    display: none;
+    &::after {
+      display: none;
+    }
   }
 
   .contacts-form__label {

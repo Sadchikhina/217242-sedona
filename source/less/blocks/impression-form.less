@@ -2,16 +2,16 @@
   position: relative;
   padding: 0;
   padding-top: 35px;
-}
 
-.impression-form::after {
-  content: "";
-  position: absolute;
-  bottom: -44px;
-  left: -21px;
-  width: 320px;
-  height: 1px;
-  background-color: @grey-border;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -44px;
+    left: -21px;
+    width: 320px;
+    height: 1px;
+    background-color: @grey-border;
+  }
 }
 
 .impression-form__label {
@@ -36,25 +36,25 @@
   text-transform: none;
   font-weight: bold;
   padding-left: 79px;
-}
 
-.impression-form__input-label:hover::before {
-  background-color: @grey-border;
-}
+  &:hover::before {
+    background-color: @grey-border;
+  }
 
-.impression-form__input-label:active::before {
-  background-color: @grey-main-decor;
-}
+  &:active::before {
+    background-color: @grey-main-decor;
+  }
 
-.impression-form__input-label::before {
-  content: "";
-  position: absolute;
-  top: -14px;
-  left: 0;
-  width: 55px;
-  height: 55px;
-  border-radius: 100%;
-  background-color: @grey-field;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -14px;
+    left: 0;
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    background-color: @grey-field;
+  }
 }
 
 .impression-form__field:checked + .impression-form__input-label::after {
@@ -78,22 +78,22 @@
     padding-right: 51px;
     margin-right: 58px;
     order: -1;
-  }
 
-  .impression-form::after {
-    bottom: -47px;
-    left: 0;
-    width: 125px;
-  }
+    &::after {
+      bottom: -47px;
+      left: 0;
+      width: 125px;
+    }
 
-  .impression-form::before {
-    content: "";
-    position: absolute;
-    top: 6px;
-    right: -1px;
-    width: 1px;
-    height: 293px;
-    background-color: @grey-border;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      right: -1px;
+      width: 1px;
+      height: 293px;
+      background-color: @grey-border;
+    }
   }
 
   .impression-form__label {
@@ -116,11 +116,11 @@
   .impression-form {
     width: 50%;
     margin-right: 0;
-  }
 
-  .impression-form::after {
-    bottom: -46px;
-    width: 279px;
+    &::after {
+      bottom: -46px;
+      width: 279px;
+    }
   }
 
   .impression-form__label {
@@ -130,10 +130,10 @@
 
   .impression-form__input-label {
     padding-left: 78px;
-  }
 
-  .impression-form__input-label::before {
-    left: 3px;
+    &::before {
+      left: 3px;
+    }
   }
 
   .impression-form__field:checked + .impression-form__input-label::after {

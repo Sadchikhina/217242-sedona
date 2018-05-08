@@ -9,16 +9,16 @@
   text-align: center;
   padding-bottom: 3px;
   margin-bottom: 18px;
-}
 
-.form__wrapper::after {
-  content: "";
-  position: absolute;
-  bottom: -1px;
-  left: -21px;
-  width: 320px;
-  height: 1px;
-  background-color: @grey-border;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: -21px;
+    width: 320px;
+    height: 1px;
+    background-color: @grey-border;
+  }
 }
 
 .form__title {
@@ -43,10 +43,10 @@
     margin: 0 auto;
     padding-top: 15px;
     margin-bottom: 56px;
-  }
 
-  .form__wrapper::after {
-    display: none;
+    &::after {
+      display: none;
+    }
   }
 
   .form__title {
