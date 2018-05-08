@@ -6,37 +6,37 @@
 }
 
 .cite-nav__item {
-    text-align: center;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    border-bottom: 1px solid @dark-blue;
-    border-top: 1px solid @light-blue;
+  text-align: center;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid @dark-blue;
+  border-top: 1px solid @light-blue;
 
-    a {
-      color: @white;
-      font-size: @title-size;
-      line-height: 40px;
-      font-weight: bold;
-      text-decoration: none;
-    }
+  a {
+    color: @white;
+    font-size: @title-size;
+    line-height: 40px;
+    font-weight: bold;
+    text-decoration: none;
   }
+}
 
-  .cite-nav__item:hover {
-    background-color: @blue-hover;
+.cite-nav__item:hover {
+  background-color: @blue-hover;
+}
+
+.cite-nav__item:active {
+  background-color: @blue-down;
+
+  a {
+    color: @blue-text;
   }
+}
 
-  .cite-nav__item:active {
-    background-color: @blue-down;
-
-    a {
-      color: @blue-text;
-    }
-  }
-
-  .cite-nav__item:last-child {
-    border-bottom: none;
-    box-shadow: inset 0 -2px 7px -1px @dark-blue;
-  }
+.cite-nav__item:last-child {
+  border-bottom: none;
+  box-shadow: inset 0 -2px 7px -1px @dark-blue;
+}
 
 @media (min-width: @tablet-width) {
   .cite-nav {
