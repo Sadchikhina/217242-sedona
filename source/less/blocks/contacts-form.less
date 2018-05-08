@@ -2,108 +2,108 @@
   position: relative;
   padding: 0;
   padding-top: 24px;
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: -30px;
-    left: -21px;
-    width: 320px;
-    height: 1px;
-    background-color: @grey-border;
-  }
+.contacts-form::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: -21px;
+  width: 320px;
+  height: 1px;
+  background-color: @grey-border;
+}
 
-  &__label {
-    font-size: @title-size;
-    font-weight: bold;
-    display: block;
-    text-align: center;
-    margin-bottom: 20px;
-  }
+.contacts-form__label {
+  font-size: @title-size;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-  &__input {
-    position: relative;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 13px;
-  }
+.contacts-form__input {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 13px;
+}
 
-  &__input-label {
-    font-size: @regular-size;
-    padding-left: 23px;
-    display: block;
-    margin-bottom: 6px;
-  }
+.contacts-form__input-label {
+  font-size: @regular-size;
+  padding-left: 23px;
+  display: block;
+  margin-bottom: 6px;
+}
 
-  &__field {
-    font-size: @title-size;
-    font-weight: bold;
-    width: 100%;
-    height: 58px;
-    padding-left: 22px;
-    background-color: @grey-field;
-    border: none;
-    outline: none;
-  }
+.contacts-form__field {
+  font-size: @title-size;
+  font-weight: bold;
+  width: 100%;
+  height: 58px;
+  padding-left: 22px;
+  background-color: @grey-field;
+  border: none;
+  outline: none;
+}
 
-  &__field:hover {
-    background-color: @grey-border;
-  }
+.contacts-form__field:hover {
+  background-color: @grey-border;
+}
 
-  &__field:active,
-  &__field:focus {
-    background-color: @white;
-    outline: 4px solid @grey-main-decor;
-  }
+.contacts-form__field:active,
+.contacts-form__field:focus {
+  background-color: @white;
+  outline: 4px solid @grey-main-decor;
+}
 
-  &__input--phone::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 58px;
-    height: 58px;
-    background-color: @grey-border;
-    background-image: url("../img/icon-phone.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+.contacts-form__input--phone::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 58px;
+  height: 58px;
+  background-color: @grey-border;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
-  &__input--email::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 58px;
-    height: 58px;
-    background-color: @grey-border;
-    background-image: url("../img/icon-mail.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+.contacts-form__input--email::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 58px;
+  height: 58px;
+  background-color: @grey-border;
+  background-image: url("../img/icon-mail.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media (min-width: @tablet-width) {
   .contacts-form {
     width: 100%;
     padding-top: 33px;
+  }
 
-    &::after {
-      display: none;
-    }
+  .contacts-form::after {
+    display: none;
+  }
 
-    &__label {
-      font-size: 21px;
-      margin-bottom: 26px;
-    }
+  .contacts-form__label {
+    font-size: 21px;
+    margin-bottom: 26px;
+  }
 
-    &__input {
-      margin-bottom: 24px;
-    }
+  .contacts-form__input {
+    margin-bottom: 24px;
+  }
 
-    &__input-label {
-      cursor: pointer;
-    }
+  .contacts-form__input-label {
+    cursor: pointer;
   }
 }
 
@@ -112,29 +112,29 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+  }
 
-    &__label {
-      width: 100%;
-      margin-bottom: 74px;
-    }
+  .contacts-form__label {
+    width: 100%;
+    margin-bottom: 74px;
+  }
 
-    &__input {
-      display: flex;
-      align-items: baseline;
-      margin-bottom: 0;
-    }
+  .contacts-form__input {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 0;
+  }
 
-    &__input-label {
-      padding-left: 0;
-      margin-right: 16px;
-    }
+  .contacts-form__input-label {
+    padding-left: 0;
+    margin-right: 16px;
+  }
 
-    &__invis-desctop {
-      display: none;
-    }
+  .contacts-form__invis-desctop {
+    display: none;
+  }
 
-    &__field {
-      width: 315px;
-    }
+  .contacts-form__field {
+    width: 315px;
   }
 }
