@@ -42,22 +42,26 @@
   .cite-nav {
     width: 100%;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     background-color: @white;
     padding-top: 8px;
-    padding-left: 1px;
+    padding-bottom: 8px;
+    padding-left: 25px;
+    padding-right: 3px;
   }
 
   .cite-nav__item {
-    width: 20%;
     padding: 0;
-    margin-right: 45px;
+    margin-right: 100px;
     border: none;
 
     a {
       font-size: @regular-size;
       color: @black;
+    }
+
+    &:first-child {
+      margin-right: 78px;
     }
 
     &:last-child {
@@ -66,7 +70,11 @@
     }
 
     &:nth-child(2) {
-      margin-right: 210px;
+      margin-right: 208px;
+    }
+
+    &:nth-child(3) {
+      margin-right: 50px;
     }
 
     &:hover {
@@ -102,11 +110,22 @@
 @media (min-width: @desctop-width) {
   .cite-nav {
     display: flex;
-    justify-content: space-between;
     background-color: @white;
+    padding-left: 91px;
+    padding-top: 7px;
   }
 
   .cite-nav__item {
-    margin-right: 0;
+    &:first-child {
+      margin-right: 162px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 383px;
+    }
+
+    &:nth-child(3) {
+      margin-right: 136px;
+    }
   }
 }
