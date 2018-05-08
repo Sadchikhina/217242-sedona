@@ -1,37 +1,37 @@
 .contacts {
   display: flex;
   flex-direction: column;
+}
 
-  &__list {
-    margin-bottom: 28px;
-    margin-left: 83px;
+.contacts__list {
+  margin-bottom: 28px;
+  margin-left: 83px;
+}
+
+.contacts__tag {
+  font-size: 21px;
+  font-weight: bold;
+  margin-left: 91px;
+  margin-bottom: 21px;
+}
+
+.contacts__developer {
+  position: relative;
+  font-size: @regular-size;
+  margin-left: 95px;
+
+  svg {
+    position: absolute;
+    left: 102px;
+    top: -2px;
   }
 
-  &__tag {
-    font-size: 21px;
-    font-weight: bold;
-    margin-left: 91px;
-    margin-bottom: 21px;
+  svg:hover {
+    fill: @blue;
   }
 
-  &__developer {
-    position: relative;
-    font-size: @regular-size;
-    margin-left: 95px;
-
-    svg {
-      position: absolute;
-      left: 102px;
-      top: -2px;
-    }
-
-    svg:hover {
-      fill: @blue;
-    }
-
-    svg:active {
-      fill: @grey-links-down;
-    }
+  svg:active {
+    fill: @grey-links-down;
   }
 }
 
@@ -43,23 +43,23 @@
     max-width: 647px;
     margin: 0 auto;
     padding-top: 0;
+  }
 
-    &__list {
-      margin-left: 0;
-      margin-right: 3px;
-    }
+  .contacts__list {
+    margin-left: 0;
+    margin-right: 3px;
+  }
 
-    &__tag {
-      margin-left: 1px;
-    }
+  .contacts__tag {
+    margin-left: 1px;
+  }
 
-    &__developer {
-      margin-left: 0;
-      margin-right: 40px;
+  .contacts__developer {
+    margin-left: 0;
+    margin-right: 40px;
 
-      svg {
-        top: -5px;
-      }
+    svg {
+      top: -5px;
     }
   }
 }
@@ -72,13 +72,13 @@
     max-width: 960px;
     margin: 0 auto;
     padding-top: 0;
+  }
 
-    &__tag {
-      margin-left: 0;
-    }
+  .contacts__tag {
+    margin-left: 0;
+  }
 
-    &__developer {
-      margin-right: 41px;
-    }
+  .contacts__developer {
+    margin-right: 41px;
   }
 }

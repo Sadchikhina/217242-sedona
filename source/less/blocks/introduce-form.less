@@ -2,107 +2,107 @@
   position: relative;
   padding: 0;
   padding-top: 1px;
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: -26px;
-    left: -21px;
-    width: 320px;
-    height: 1px;
-    background-color: @grey-border;
-  }
+.introduce-form::after {
+  content: "";
+  position: absolute;
+  bottom: -26px;
+  left: -21px;
+  width: 320px;
+  height: 1px;
+  background-color: @grey-border;
+}
 
-  &__label {
-    font-size: @title-size;
-    font-weight: bold;
-    display: block;
-    text-align: center;
-    margin-bottom: 21px;
-  }
+.introduce-form__label {
+  font-size: @title-size;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  margin-bottom: 21px;
+}
 
-  &__input {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: 20px;
-  }
+.introduce-form__input {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 20px;
+}
 
-  &__field {
-    height: 58px;
-    font-size: @title-size;
-    font-weight: bold;
-    padding-left: 21px;
-    background-color: @grey-field;
-    border: none;
-    outline: none;
-  }
+.introduce-form__field {
+  height: 58px;
+  font-size: @title-size;
+  font-weight: bold;
+  padding-left: 21px;
+  background-color: @grey-field;
+  border: none;
+  outline: none;
+}
 
-  &__field:hover {
-    background-color: @grey-border;
-  }
+.introduce-form__field:hover {
+  background-color: @grey-border;
+}
 
-  &__field:active,
-  &__field:focus {
-    background-color: @white;
-    outline: 4px solid @grey-main-decor;
-  }
+.introduce-form__field:active,
+.introduce-form__field:focus {
+  background-color: @white;
+  outline: 4px solid @grey-main-decor;
+}
 
-  &__field--name {
-    width: 230px;
-  }
+.introduce-form__field--name {
+  width: 230px;
+}
 
-  &__field--surname {
-    width: 191px;
-  }
+.introduce-form__field--surname {
+  width: 191px;
+}
 
-  &__field--patronymic {
-    width: 193px;
-  }
+.introduce-form__field--patronymic {
+  width: 193px;
+}
 
-  &__input-label {
-    font-size: @regular-size;
-  }
+.introduce-form__input-label {
+  font-size: @regular-size;
 }
 
 @media (min-width: @tablet-width) {
   .introduce-form {
     padding-top: 0;
     width: 265px;
+  }
 
-    &::after {
-      bottom: -47px;
-      left: 143px;
-      width: 124px;
-    }
+  .introduce-form::after {
+    bottom: -47px;
+    left: 143px;
+    width: 124px;
+  }
 
-    &__label {
-      font-size: 21px;
-      text-align: left;
-      margin-bottom: 58px;
-    }
+  .introduce-form__label {
+    font-size: 21px;
+    text-align: left;
+    margin-bottom: 58px;
+  }
 
-    &__input {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 20px;
-    }
+  .introduce-form__input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
 
-    &__input-label {
-      cursor: pointer;
-    }
+  .introduce-form__input-label {
+    cursor: pointer;
+  }
 
-    &__field--name {
-      width: 215px;
-    }
+  .introduce-form__field--name {
+    width: 215px;
+  }
 
-    &__field--surname {
-      width: 177px;
-    }
+  .introduce-form__field--surname {
+    width: 177px;
+  }
 
-    &__field--patronymic {
-      width: 179px;
-    }
+  .introduce-form__field--patronymic {
+    width: 179px;
   }
 }
 
@@ -110,35 +110,35 @@
   .introduce-form {
     width: 50%;
     padding-left: 80px;
+  }
 
-    &::after {
-      bottom: -46px;
-      left: 200px;
-      width: 279px;
-    }
+  .introduce-form::after {
+    bottom: -46px;
+    left: 200px;
+    width: 279px;
+  }
 
-    &__label {
-      margin-bottom: 56px;
-    }
+  .introduce-form__label {
+    margin-bottom: 56px;
+  }
 
-    &__input {
-      margin-bottom: 20px;
-    }
+  .introduce-form__input {
+    margin-bottom: 20px;
+  }
 
-    &__field {
-      height: 58px;
-    }
+  .introduce-form__field {
+    height: 58px;
+  }
 
-    &__field--name {
-      width: 350px;
-    }
+  .introduce-form__field--name {
+    width: 350px;
+  }
 
-    &__field--surname {
-      width: 311px;
-    }
+  .introduce-form__field--surname {
+    width: 311px;
+  }
 
-    &__field--patronymic {
-      width: 315px;
-    }
+  .introduce-form__field--patronymic {
+    width: 315px;
   }
 }

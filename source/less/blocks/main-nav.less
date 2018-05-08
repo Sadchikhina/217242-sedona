@@ -1,26 +1,26 @@
 .main-nav {
   position: relative;
+}
 
-  &__logo {
-    position: absolute;
-    left: 110px;
-    z-index: 1;
-  }
+.main-nav__logo {
+  position: absolute;
+  left: 110px;
+  z-index: 1;
+}
 
-  &__open-button {
-    position: absolute;
-    bottom: -30px;
-    right: 20px;
-    width: 23px;
-    height: 4px;
-    background-color: @blue;
-    border: none;
-    border-bottom: 1px solid @light-blue-btn;
-    border-top: 1px solid @light-blue-btn;
-    box-shadow:
-      0 8px 0 0 @blue,
-      0 -9px 0 0 @blue;
-  }
+.main-nav__open-button {
+  position: absolute;
+  bottom: -30px;
+  right: 20px;
+  width: 23px;
+  height: 4px;
+  background-color: @blue;
+  border: none;
+  border-bottom: 1px solid @light-blue-btn;
+  border-top: 1px solid @light-blue-btn;
+  box-shadow:
+    0 8px 0 0 @blue,
+    0 -9px 0 0 @blue;
 }
 
 @media (min-width: @tablet-width) {
@@ -28,24 +28,23 @@
     display: flex;
     width: 721px;
     margin: 0 auto;
+  }
 
-    &__open-button {
-      display: none;
-    }
+  .main-nav__open-button {
+    display: none;
+  }
 
-    &__logo {
-      left: 309px;
-    }
+  .main-nav__logo {
+    left: 309px;
   }
 }
 
 @media (min-width: @desctop-width) {
   .main-nav {
     width: 1200px;
-    margin: 0 auto;
+  }
 
-    &__logo {
-      left: 507px;
-    }
+  .main-nav__logo {
+    left: 507px;
   }
 }

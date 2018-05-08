@@ -1,58 +1,58 @@
 .pictures-list {
   margin-bottom: 31px;
+}
 
-  &__item {
-    border-bottom: 1px solid @grey-border;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 17px;
-  }
+.pictures-list__item {
+  border-bottom: 1px solid @grey-border;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 17px;
+}
 
-  &__item:nth-child(2) {
-    padding-top: 21px;
-    padding-bottom: 18px;
-  }
+.pictures-list__item:nth-child(2) {
+  padding-top: 21px;
+  padding-bottom: 18px;
+}
 
-  &__item:nth-child(3),
-  &__item:nth-child(4) {
-    padding-top: 22px;
-    padding-bottom: 16px;
-  }
+.pictures-list__item:nth-child(3),
+.pictures-list__item:nth-child(4) {
+  padding-top: 22px;
+  padding-bottom: 16px;
+}
 
-  &__img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 15px;
-  }
+.pictures-list__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 15px;
+}
 
-  &__name {
-    font-size: @regular-size;
-    font-weight: bold;
-    line-height: @regular-line-height;
-    padding: 0;
-    margin: 0;
-  }
+.pictures-list__name {
+  font-size: @regular-size;
+  font-weight: bold;
+  line-height: @regular-line-height;
+  padding: 0;
+  margin: 0;
+}
 
-  &__author {
-    font-size: @regular-size;
-    line-height: 24px;
-    text-transform: none;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 6px;
-  }
+.pictures-list__author {
+  font-size: @regular-size;
+  line-height: 24px;
+  text-transform: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 6px;
+}
 
-  &__likes {
-    font-size: @regular-size;
-    line-height: @regular-line-height;
-    font-weight: bold;
+.pictures-list__likes {
+  font-size: @regular-size;
+  line-height: @regular-line-height;
+  font-weight: bold;
 
-    svg {
-      opacity: 0.3;
-      margin-right: 10px;
-    }
+  svg {
+    opacity: 0.3;
+    margin-right: 10px;
   }
 }
 
@@ -61,67 +61,67 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 67px;
+  }
 
-    &__item {
+  .pictures-list__item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+    background-color: @grey-field;
+    padding: 0;
+    margin: 0;
+    border-bottom: none;
+  }
+
+  .pictures-list__item:first-of-type {
+    width: 100%;
+
+    .pictures-list__wrapper {
       display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      width: 50%;
-      background-color: @grey-field;
-      padding: 0;
-      margin: 0;
-      border-bottom: none;
-    }
-
-    &__item:first-of-type {
-      width: 100%;
-
-      .pictures-list__wrapper {
-        display: flex;
-        justify-content: space-between;
-        width: 610px;
-        margin: 0 auto;
-      }
-    }
-
-    &__item:nth-child(2) {
-      padding: 0;
-
-      .pictures-list__description {
-        margin-right: 37px;
-      }
-    }
-
-    &__item:nth-child(3) {
-      padding: 0;
-
-      .pictures-list__description {
-        margin-right: 102px;
-      }
-    }
-
-    &__item:nth-child(4) {
-      padding: 0;
-
-      .pictures-list__description {
-        margin-right: 102px;
-      }
-    }
-
-    &__wrapper {
-      display: flex;
-      width: 282px;
+      justify-content: space-between;
+      width: 610px;
       margin: 0 auto;
-      padding-bottom: 11px;
     }
+  }
 
-    &__likes {
-      align-self: center;
-    }
+  .pictures-list__item:nth-child(2) {
+    padding: 0;
 
-    &__item--bg-grey {
-      background-color: @grey-gallery;
+    .pictures-list__description {
+      margin-right: 37px;
     }
+  }
+
+  .pictures-list__item:nth-child(3) {
+    padding: 0;
+
+    .pictures-list__description {
+      margin-right: 102px;
+    }
+  }
+
+  .pictures-list__item:nth-child(4) {
+    padding: 0;
+
+    .pictures-list__description {
+      margin-right: 102px;
+    }
+  }
+
+  .pictures-list__wrapper {
+    display: flex;
+    width: 282px;
+    margin: 0 auto;
+    padding-bottom: 11px;
+  }
+
+  .pictures-list__likes {
+    align-self: center;
+  }
+
+  .pictures-list__item--bg-grey {
+    background-color: @grey-gallery;
   }
 }
 
@@ -130,64 +130,64 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 73px;
+  }
 
-    &__item {
-      position: relative;
-      width: 33.3%;
-      color: @white;
-      border-bottom: none;
+  .pictures-list__item {
+    position: relative;
+    width: 33.3%;
+    color: @white;
+    border-bottom: none;
+  }
+
+  .pictures-list__img {
+    margin: 0;
+  }
+
+  .pictures-list__wrapper {
+    position: absolute;
+    width: 100%;
+    height: 79px;
+    bottom: 0;
+    padding-top: 16px;
+    padding-left: 21px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .pictures-list__likes {
+    align-self: center;
+
+    svg {
+      opacity: 1;
+      fill: @white;
     }
+  }
 
-    &__img {
-      margin: 0;
-    }
-
-    &__wrapper {
-      position: absolute;
+  .pictures-list__item:first-of-type {
+    .pictures-list__wrapper {
       width: 100%;
-      height: 79px;
-      bottom: 0;
-      padding-top: 16px;
-      padding-left: 21px;
-      background-color: rgba(0, 0, 0, 0.3);
+      justify-content: flex-start;
     }
 
-    &__likes {
-      align-self: center;
-
-      svg {
-        opacity: 1;
-        fill: @white;
-      }
+    .pictures-list__description {
+      margin-right: 949px;
     }
+  }
 
-    &__item:first-of-type {
-      .pictures-list__wrapper {
-        width: 100%;
-        justify-content: flex-start;
-      }
-
-      .pictures-list__description {
-        margin-right: 949px;
-      }
+  .pictures-list__item:nth-child(2) {
+    .pictures-list__description {
+      margin-right: 115px;
     }
+  }
 
-    &__item:nth-child(2) {
-      .pictures-list__description {
-        margin-right: 115px;
-      }
+  .pictures-list__item:nth-child(3) {
+    .pictures-list__description {
+      margin-right: 180px;
     }
+  }
 
-    &__item:nth-child(3) {
-      .pictures-list__description {
-        margin-right: 180px;
-      }
-    }
-
-    &__item:nth-child(4) {
-      .pictures-list__description {
-        margin-right: 182px;
-      }
+  .pictures-list__item:nth-child(4) {
+    .pictures-list__description {
+      margin-right: 182px;
     }
   }
 }
