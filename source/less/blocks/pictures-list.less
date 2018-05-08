@@ -1,5 +1,5 @@
 .pictures-list {
-  margin-bottom: 33px;
+  margin-bottom: 31px;
 
   &__item {
     border-bottom: 1px solid @grey-border;
@@ -16,7 +16,7 @@
 
   &__item:nth-child(3),
   &__item:nth-child(4) {
-    padding-top: 23px;
+    padding-top: 22px;
     padding-bottom: 16px;
   }
 
@@ -45,22 +45,14 @@
   }
 
   &__likes {
-    position: relative;
-    padding-left: 36px;
     font-size: @regular-size;
     line-height: @regular-line-height;
     font-weight: bold;
-  }
 
-  &__likes::before {
-    content: "";
-    position: absolute;
-    bottom: 1px;
-    left: 0;
-    width: 22px;
-    height: 20px;
-    background-image: url("../img/icon-like.svg");
-    opacity: 0.3;
+    svg {
+      opacity: 0.3;
+      margin-right: 10px;
+    }
   }
 }
 
@@ -127,11 +119,6 @@
       align-self: center;
     }
 
-    &__likes::before {
-      bottom: 6px;
-      left: 4px;
-    }
-
     &__item--bg-grey {
       background-color: @grey-gallery;
     }
@@ -167,6 +154,11 @@
 
     &__likes {
       align-self: center;
+
+      svg {
+        opacity: 1;
+        fill: @white;
+      }
     }
 
     &__item:first-of-type {
@@ -176,25 +168,25 @@
       }
 
       .pictures-list__description {
-        margin-right: 945px;
+        margin-right: 949px;
       }
     }
 
     &__item:nth-child(2) {
       .pictures-list__description {
-        margin-right: 112px;
+        margin-right: 115px;
       }
     }
 
     &__item:nth-child(3) {
       .pictures-list__description {
-        margin-right: 178px;
+        margin-right: 180px;
       }
     }
 
     &__item:nth-child(4) {
       .pictures-list__description {
-        margin-right: 180px;
+        margin-right: 182px;
       }
     }
   }

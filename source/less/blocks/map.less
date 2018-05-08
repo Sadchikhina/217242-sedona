@@ -1,14 +1,20 @@
 .map {
-  margin-bottom: 28px;
+  position: relative;
+  padding-bottom: 385px;
 
-  &__img {
-    max-width: 100%;
-    height: auto;
+  &__interactive {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 350px;
+    border: none;
   }
 }
 
 @media (min-width: @tablet-width) {
   .map {
     margin-bottom: 12px;
+    padding-bottom: 357px;
   }
 }
