@@ -1,6 +1,7 @@
 .map {
   position: relative;
-  padding-bottom: 385px;
+  padding-bottom: 386px;
+  min-height: 350px;
 }
 
 .map__interactive {
@@ -10,6 +11,19 @@
   width: 100%;
   min-height: 350px;
   border: none;
+  z-index: 1;
+}
+
+.map__img {
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+}
+
+.map__marker {
+  position: absolute;
+  top: 160px;
+  left: 146px;
 }
 
 @media (min-width: @tablet-width) {

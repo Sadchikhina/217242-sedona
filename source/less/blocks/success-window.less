@@ -5,6 +5,7 @@
   padding-top: 28px;
   background-color: @white;
   box-shadow: 0 0 15px 0 @grey-shadow;
+  z-index: 1;
   display: none;
 }
 
@@ -37,9 +38,9 @@
 @media (min-width: @tablet-width) {
   .success-window {
     position: fixed;
-    top: 10%;
+    top: 30%;
     left: 50%;
-    margin-left: -384px;
+    transform: translate(-50%, -50%);
     width: 640px;
     height: 347px;
   }
