@@ -73,7 +73,10 @@ gulp.task("html", function () {
 gulp.task("minify-js", function(){
   gulp.src("source/js/*.js")
     .pipe(minifyjs())
-    .pipe(gulp.dest("build"));
+    .pipe(rename(function(path) {
+      path.basename += ".min";
+    }))
+    .pipe(gulp.dest("build/js"));
 });
 
 gulp.task("sprite", function () {
@@ -107,6 +110,7 @@ gulp.task("build", function(done) {
     "images",
     "webp",
     "sprite",
+    "minify-js",
     "html",
     done
   );
