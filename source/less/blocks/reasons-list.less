@@ -45,6 +45,11 @@
 }
 
 .reasons-list__add-info {
+  min-height: 139px;
+  background-color: @white;
+  padding-left: 70px;
+  padding-right: 20px;
+
   &--motel {
     position: relative;
     padding-top: 35px;
@@ -149,13 +154,6 @@
   }
 }
 
-.reasons-list__add-info {
-  min-height: 139px;
-  background-color: @white;
-  padding-left: 70px;
-  padding-right: 20px;
-}
-
 @media (min-width: @tablet-width) {
   .reasons-list {
     flex-direction: row;
@@ -198,12 +196,12 @@
   }
 
   .reasons-list__add-info {
-      text-align: center;
-      background-color: @white;
-      padding-top: 135px;
-      padding-left: 0;
-      padding-right: 0;
-      padding-bottom: 46px;
+    text-align: center;
+    background-color: @white;
+    padding-top: 135px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 46px;
 
     &--motel {
       svg {
@@ -368,7 +366,7 @@
 
     &--food {
       z-index: 1;
-      
+
       svg {
         top: 61px;
       }
