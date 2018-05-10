@@ -10,7 +10,7 @@
   margin: 0 auto;
   padding-top: 28px;
   padding-bottom: 12px;
-  z-index: 1;
+  z-index: 5;
 }
 
 .reasons__title {
@@ -38,7 +38,15 @@
 }
 
 @media (min-width: @desctop-width) {
+  .reasons {
+    margin-bottom: 1px;
+  }
   .reasons__wrapper {
-    width: 500px;
+    width: 1200px;
+    background-color: @white;
+  }
+
+  .reasons__new-line-desctop {
+    display: block;
   }
 }
