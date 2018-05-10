@@ -4,12 +4,13 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 320px;
-  height: 323px;
+  min-height: 323px;
   text-align: center;
   padding-top: 28px;
   background-color: @white;
   box-shadow: 0 0 15px 0 @grey-shadow;
   z-index: 5;
+  display: none;
 }
 
 .success-window__title {
@@ -41,7 +42,7 @@
 @media (min-width: @tablet-width) {
   .success-window {
     width: 640px;
-    height: 347px;
+    min-height: 347px;
   }
 
   .success-window__title {

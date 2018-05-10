@@ -4,27 +4,31 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 320px;
-  height: 280px;
+  min-height: 280px;
   margin: 0 auto;
-  padding-top: 24px;
+  padding-top: 40px;
   padding-left: 45px;
   padding-right: 45px;
+  padding-bottom: 20px;
   text-align: center;
   background-color: @white;
   box-shadow: 0 0 15px 0 @grey-shadow;
   z-index: 5;
+  display: none;
 }
 
 .error-window__title {
   font-size: @title-size;
   font-weight: bold;
-  margin-bottom: 28px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 27px;
 }
 
 .error-window__description {
   font-size: @regular-size;
   line-height: @regular-line-height;
-  margin-bottom: 22px;
+  margin-bottom: 23px;
 }
 
 .error-window__button {
@@ -41,7 +45,7 @@
 @media (min-width: @tablet-width) {
   .error-window {
     width: 400px;
-    height: 347px;
+    min-height: 347px;
     padding-top: 55px;
   }
 
