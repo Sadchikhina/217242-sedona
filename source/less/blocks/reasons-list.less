@@ -335,6 +335,15 @@
     position: absolute;
     width: 799px;
     height: auto;
+    overflow: hidden;
+
+    &--hotel {
+      top: -70px;
+    }
+
+    &--bridge {
+      top: -74px;
+    }
   }
 
   .reasons-list__add-info-wrapper {
@@ -342,9 +351,19 @@
     margin-right: 58px;
   }
 
-  .reasons-list__add-info--motel {
-    svg {
-      left: -1px;
+  .reasons-list__add-info {
+    &--motel {
+      z-index: 1;
+      svg {
+        left: -1px;
+      }
+    }
+
+    &--food {
+      z-index: 1;
+      svg {
+        top: 61px;
+      }
     }
   }
 
@@ -373,6 +392,20 @@
       background-color: @white;
       padding-left: 0;
       padding-bottom: 65px;
+    }
+  }
+
+  .reasons-list__item:nth-child(4) {
+    .reasons-list__add-info-wrapper {
+      width: 300px;
+      margin-right: 56px;
+    }
+  }
+
+  .reasons-list__item:nth-child(7) {
+    .reasons-list__bg-grey-description {
+      width: 350px;
+      margin-left: 0;
     }
   }
 }
