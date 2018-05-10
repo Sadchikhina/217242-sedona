@@ -1,13 +1,15 @@
 .success-window {
   position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 320px;
   height: 323px;
   text-align: center;
   padding-top: 28px;
   background-color: @white;
   box-shadow: 0 0 15px 0 @grey-shadow;
-  z-index: 1;
-  display: none;
+  z-index: 5;
 }
 
 .success-window__title {
@@ -38,10 +40,6 @@
 
 @media (min-width: @tablet-width) {
   .success-window {
-    position: fixed;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 640px;
     height: 347px;
   }
