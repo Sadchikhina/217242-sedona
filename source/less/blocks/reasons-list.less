@@ -176,16 +176,21 @@
     height: 255px;
   }
 
-  .reasons-list__bg-blue-description,
-  .reasons-list__bg-grey-description {
-    padding-left: 28px;
-    padding-right: 22px;
-  }
-
   .reasons-list__bg-blue-title,
   .reasons-list__bg-grey-title {
     font-size: 21px;
     line-height: 26px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 7px;
+  }
+
+
+  .reasons-list__bg-blue-description,
+  .reasons-list__bg-grey-description {
+    padding-left: 24px;
+    padding-right: 22px;
+    margin-top: 20px;
   }
 
   .reasons-list__pic--bridge {
@@ -289,6 +294,11 @@
 
   .reasons-list__item:nth-child(4) {
     order: 3;
+
+    .reasons-list__add-info-wrapper {
+      width: 170px;
+      margin-right: 50px;
+    }
   }
 
   .reasons-list__item:nth-child(5) {
@@ -301,6 +311,11 @@
 
   .reasons-list__item:nth-child(7) {
     order: 7;
+
+    .reasons-list__bg-grey-description {
+      width: 180px;
+      margin-left: 13px;
+    }
   }
 
   .reasons-list__item:last-child {
