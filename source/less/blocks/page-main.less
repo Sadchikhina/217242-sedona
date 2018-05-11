@@ -9,13 +9,15 @@
   background-repeat: no-repeat;
   background-color: @blue-bg;
 
+
   &--index {
     position: relative;
     height: 389px;
     padding-top: 90px;
     text-align: center;
-    background-size: cover;
     overflow: hidden;
+    background-size: cover;
+    background-position: -290px;
   }
 
   &--index::before {
@@ -32,12 +34,12 @@
 
   &--inner {
     position: relative;
-    background-position: center bottom;
     height: 158px;
     padding-top: 52px;
     margin-bottom: 38px;
     text-align: center;
     overflow: hidden;
+    background-size: cover;
   }
 
   &--inner::before {
@@ -71,6 +73,7 @@
       height: 518px;
       padding-top: 77px;
       text-align: center;
+      background-position: -210px;
 
       img {
         width: 460px;
@@ -134,6 +137,7 @@
       height: 518px;
       padding-top: 77px;
       text-align: center;
+      background-position: 0;
 
       img {
         width: 460px;
